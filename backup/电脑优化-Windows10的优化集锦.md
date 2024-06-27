@@ -15,6 +15,12 @@ Windows 10 专业版
 
 ![设置](https://github.com/DiYingisaDer/zang_diying.github.io/assets/125773452/0188456f-4e70-4642-baa2-23c8fd342a9f)
 
-**1、系统设置**
-第一步点击系统
+### 系统
 ![image](https://github.com/DiYingisaDer/zang_diying.github.io/assets/125773452/fe98207c-5f26-4bb1-b8b8-39e28addd758)
+
+#### 屏幕设置——高级显示设置、图形设置
+一、设置显示器支持的最高刷新频率(HZ)
+1.点击屏幕下滑找到“高级显示设置”并点击进入
+![2024-06-27-16-55-11](https://github.com/DiYingisaDer/zang_diying.github.io/assets/125773452/02045123-4a34-414b-b518-0361e2219db8)
+
+
