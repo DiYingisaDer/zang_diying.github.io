@@ -102,7 +102,7 @@ Powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61
 
 3.右键开始菜单并点击“Windows PowerShell(管理员)”；
 
-![9](https://github.com/DiYingisaDer/zang_diying.github.io/assets/125773452/1ed92bf0-1d87-4c1e-8665-9fb551395656)
+![9](https://github.com/DiYingisaDer/zang_diying.github.io/assets/125773452/eb62291f-23f4-4410-ae3c-c2f8e7be2248)
 
 4、将代码粘贴(Ctrl + V)后按回车(Enter)即可。
 
