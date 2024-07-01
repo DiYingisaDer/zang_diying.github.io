@@ -3,7 +3,7 @@
 ---
 
 > [!NOTE]
-> ###  阅前提示
+> ###  阅前提示 - 目前目录和返回键无法正常使用，请滑动鼠标阅览，谢谢！
 > **本篇文章部分内容取自 [Meekdai的博客](https://blog.meekdai.com/) 请大家支持！**<br>
 > **本篇文章针对萌新搭建完成Gmeek博客后需要了解的一系列Markdown基本语法及可用扩展。**<br>
 > **因本文章是专门针对萌新的教程，每个章节都附带使用教程，所以看起来相对简单透彻。**
@@ -188,16 +188,13 @@
 **演示：**
 
 ```
-/<div align=center>
-<img src="图片链接" 
-width="100" height="100">
-</div>
+这里是一句演示
 ```
 
 #### [返回 · Markdown基本语法 · 目录](#Markdown基本语法)
 
 ---
-### 换行
+### 换行 - 目前未支持
 
 **代码：**
 
@@ -213,7 +210,8 @@ width="100" height="100">
 <br>**已添加br代码**<br>
 这是第一行<br>这是第二行<br>这是第三行
 
-> 使用说明：将代码`<br>`添加到句子尾部即可，若想要空出一行，可空出一行后将`<br>`添加到下一段句子的前端。<br>
+> 使用说明：<br>
+> 将代码`<br>`添加到句子尾部即可，若想要空出一行，可空出一行后将`<br>`添加到下一段句子的前端。<br>
 > 例如：<br>
 > **未添加br代码**`<br>`<br>
 > 这是第一行 这是第二行<br>
@@ -270,7 +268,7 @@ $\theta=x^2$
 |  2   |    单手举起一座山    |  梦里啥都能干，但千万别尿尿。  |
 |  3   | 时速1w公里的跑酷运动 |  梦里啥都能干，但千万别尿尿。  |
 |  4   |   赚到10w个小目标    | 白日梦里啥都有，但千万别尿尿。 |
-|  5   |       做白日梦       |             额....             | 
+|  5   |       做白日梦       |    额，怎么还是尿了....    | 
 ```
 
 **演示:**
@@ -281,7 +279,7 @@ $\theta=x^2$
 |  2   |    单手举起一座山    |  梦里啥都能干，但千万别尿尿。  |
 |  3   | 时速1w公里的跑酷运动 |  梦里啥都能干，但千万别尿尿。  |
 |  4   |   赚到10w个小目标    | 白日梦里啥都有，但千万别尿尿。 |
-|  5   |       做白日梦       |             额....             |
+|  5   |       做白日梦       |    额，怎么还是尿了....    | 
 
 #### [返回 · Markdown基本语法 · 目录](#Markdown基本语法)
 
@@ -345,7 +343,7 @@ $\theta=x^2$
 
 ---
 
-### 点击跳转
+### 点击跳转 - 目前未支持
 
 **代码：**
 
@@ -398,12 +396,6 @@ ULR格式：
 **加粗**
 
 <u>下划线</u>
-
-表情：:smile:
-
-下上标：H~2~O、X^2^
-
-高亮：== 高亮文字==
 
 #### [返回 · Markdown基本语法 · 目录](#Markdown基本语法)
 
@@ -468,13 +460,14 @@ width="100" height="100">
 
 **代码：**
 
-```
+3个`
 Gmeek-html<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=替换&bvid=替换&cid=替换&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="100%" height="460px"></iframe>
-```
+3个`
 
 **演示：**
-
-Gmeek-html<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=1604800941&bvid=BV1qm421M7Xs&cid=1557311907&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="100%" height="460px"></iframe>
+```
+Gmeek-html<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=77576202&bvid=BV1AJ411X7ta?p=4&cid=132712486&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="100%" height="460px"></iframe>
+```
 
 > 提示：此代码不会在预览模式启用，上传至博客后即可见到效果。
 
@@ -611,7 +604,6 @@ Gmeek-html<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=1604
 > "exlink":{"图标文本":"替换成自己的外部链接"},`<br>
 > 
 > 图标网站：[Octicons | Primer](https://primer.style/foundations/icons)<br>
-> 复制结果样式:
-> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path d="M8 1.5a6.5 6.5 0 1 0 6.016 4.035.75.75 0 0 1 1.388-.57 8 8 0 1 1-4.37-4.37.75.75 0 1 1-.569 1.389A6.473 6.473 0 0 0 8 1.5Zm6.28.22a.75.75 0 0 1 0 1.06l-4.063 4.064a2.5 2.5 0 1 1-1.06-1.06L13.22 1.72a.75.75 0 0 1 1.06 0ZM7 8a1 1 0 1 0 2 0 1 1 0 0 0-2 0Z"></path></svg>
-
+> 
+> **在设置完成后必须手动构件Geek！**
 #### [返回 · config设置 · 目录](#config设置)
