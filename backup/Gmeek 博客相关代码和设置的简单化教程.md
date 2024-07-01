@@ -11,7 +11,9 @@
 ---
 
 # 目录
+
 ---
+
  ## Markdown基本语法
 
 > ### 1、[标题](#标题)
@@ -37,7 +39,9 @@
 > ### 4、[强调关键信息](#强调关键信息)
 > ### 5、[自定义链接名称](#自定义链接名称)
 > ### 6、[下拉列表](#下拉列表)
+
 ---
+
 ## config设置
 
 > ### 1、[在主页右上角添加外部链接](#在主页右上角添加外部链接)
@@ -47,7 +51,7 @@
 
 ## Markdown基本语法
 
-------
+----
 
 ### 标题
 
@@ -86,6 +90,7 @@
 ---
 
 ### 引用
+
 **代码：**
 
 ```
@@ -123,6 +128,7 @@
 ### 无序列表
 
 **代码：**
+
 ```
 - 第一章
 - 第二章
@@ -148,6 +154,7 @@
 ### 任务列表
 
 **代码：**
+
 ```
 - [ ] 在月球向地球蹦极
 - [ ] 单手举起一座山
@@ -171,6 +178,7 @@
 ### 代码块
 
 **代码：**
+
 ```
 3个 `
 添加内容
@@ -200,8 +208,7 @@ width="100" height="100">
 **演示：**
 
 **未添加br代码**<br>
-这是第一行
-这是第二行
+这是第一行 这是第二行
 <br>
 <br>**已添加br代码**<br>
 这是第一行<br>这是第二行<br>这是第三行
@@ -209,8 +216,7 @@ width="100" height="100">
 > 使用说明：将代码`<br>`添加到句子尾部即可，若想要空出一行，可空出一行后将`<br>`添加到下一段句子的前端。<br>
 > 例如：<br>
 > **未添加br代码**`<br>`<br>
-> 这是第一行
-> 这是第二行<br>
+> 这是第一行 这是第二行<br>
 > `<br>`<br>
 > **已添加br代码**`<br>`<br>
 > 这是第一行`<br>`<br>这是第二行`<br>`<br>这是第三行
@@ -284,9 +290,11 @@ $\theta=x^2$
 ### 横线
 
 **代码：**
+
 ```
 ---
 ```
+
 **演示：**
 
 ---
@@ -401,8 +409,6 @@ ULR格式：
 
 ---
 
-
-
 ## Issues代码
 
 ### 图片对齐
@@ -468,14 +474,15 @@ Gmeek-html<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=替�
 
 **演示：**
 
-Gmeek-html<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=1604800941&bvid=BV1qm421M7Xs&cid=1557311907&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="100%" height="460px"></iframe><br>
+Gmeek-html<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=1604800941&bvid=BV1qm421M7Xs&cid=1557311907&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="100%" height="460px"></iframe>
+
 > 提示：此代码不会在预览模式启用，上传至博客后即可见到效果。
 
 **使用说明：**<br>
 > 复制想要添加到博客的B站视频链接到，如下：<br>
-> https://www.bilibili.com/video/BV17w4m1e7Lm/?spm_id_from=333.1007.tianma.1-1-1.click&vd_source=122727f6540d32e232b6b0645b9371cf<br>
+> https://www.bilibili.com/video/BV17w4m1e7Lm/?spm_id_from=333.1007.tianma.1-1-1.click&vd_source=122727f6540d32e232b6b0645b9371cf <br>
 > 然后在此网站解析链接：<br>
-> https://www.ibilibili.com/<br>
+> https://www.ibilibili.com/ <br>
 > 解析后复制：<br>
 > AID: `1105874011`（在解析网站中复制）<br>
 > CID: `1583942197` （在解析网站中复制）<br>
@@ -491,7 +498,7 @@ Gmeek-html<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=1604
 
 **代码：**
 
-```Markdown 扩展
+```
 > [!NOTE]
 > #蓝色 注意 用户应该知道的有用信息，即使在浏览内容时也是如此。
 
@@ -591,7 +598,6 @@ Gmeek-html<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=1604
 
 ```
 "singlePage":["about"],
-
 "iconList":{"图标文本":"打开图标网站，选择一款16像素的图标复制SVG，然后将复制结果`<path d="代码"></path></svg>`中间的代码替换到此处即可},
 "exlink":{"图标文本":"替换成自己的外部链接"},`
 ```
