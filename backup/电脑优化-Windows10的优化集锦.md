@@ -126,7 +126,3 @@ Powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61
 
 > 解：若勾选了快速启动，电脑可能会减少微乎其微的开机时长，但随着使用次数和时长的增加，快速启用功能会占用您系统硬盘大量的储存空间用创建休眠文件来保存您在关机前所使用窗口的位置，且频繁对硬盘读写会降低硬盘寿命。
 
-
-以下测试 
-
-`Gmeek-html<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=1105874011&bvid=BV17w4m1e7Lm&cid=1583942197p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="100%" height="460px"></iframe>`
