@@ -175,9 +175,9 @@
 **代码：**
 
 ```
-3个 `
-添加内容
-3个 `
+|  ```
+|  添加内容
+|  ```
 ```
 
 **演示：**
@@ -185,6 +185,8 @@
 ```
 这里是一句演示
 ```
+
+> 提示：使用时请去掉代码框内的“|”删除。
 
 **<a href="#user-content-基本语法">返回·Markdown基本语法·目录</a>**
 
@@ -490,16 +492,16 @@ width="100" height="100">
 
 **代码：**
 
-3个`
+`
 Gmeek-html<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=替换&bvid=替换&cid=替换&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="100%" height="460px"></iframe>
-3个`
+`
 
 **演示：**
 ```
 Gmeek-html<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=77576202&bvid=BV1AJ411X7ta?p=4&cid=132712486&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="100%" height="460px"></iframe>
 ```
 
-> 提示：此代码不会在预览模式启用，上传至博客后即可见到效果。
+> 提示：需要将其添加至代码块内，详细请参考<a href="#user-content-代码块">代码块</a>，且此代码不会在预览模式启用，上传至博客后即可见到效果。
 
 **使用说明：**<br>
 > 复制想要添加到博客的B站视频链接到，如下：<br>
