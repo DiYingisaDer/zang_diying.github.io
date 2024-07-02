@@ -10,36 +10,36 @@
 
 <h2 id="user-content-基本语法">Markdown基本语法</h2>
 
-> ### 1、<a href="#user-content-标题">标题</a>
-> ### 2、<a href="#user-content-引用">引用</a>
-> ### 3、<a href="#user-content-有序列表">有序列表</a>
-> ### 4、<a href="#user-content-无序列表">无序列表</a>
-> ### 5、<a href="#user-content-任务列表">任务列表</a>
-> ### 6、<a href="#user-content-代码块">代码块</a>
-> ### 7、<a href="#user-content-换行">换行</a>
-> ### 8、<a href="#user-content-数学公式">数学公式</a>
-> ### 9、<a href="#user-content-表格">表格</a>
-> ### 10、<a href="#user-content-横线">横线</a>
-> ### 11、<a href="#user-content-链接绑定">链接绑定</a>
-> ### 12、<a href="#user-content-点击跳转">点击跳转</a>
-> ### 13、<a href="#user-content-超链接">超链接</a>
-> ### 14、<a href="#user-content-字体样式">字体样式</a>
+> #### 1、<a href="#user-content-标题">标题</a>
+> #### 2、<a href="#user-content-引用">引用</a>
+> #### 3、<a href="#user-content-有序列表">有序列表</a>
+> #### 4、<a href="#user-content-无序列表">无序列表</a>
+> #### 5、<a href="#user-content-任务列表">任务列表</a>
+> #### 6、<a href="#user-content-代码块">代码块</a>
+> #### 7、<a href="#user-content-换行">换行</a>
+> #### 8、<a href="#user-content-数学公式">数学公式</a>
+> #### 9、<a href="#user-content-表格">表格</a>
+> #### 10、<a href="#user-content-横线">横线</a>
+> #### 11、<a href="#user-content-链接绑定">链接绑定</a>
+> #### 12、<a href="#user-content-点击跳转">点击跳转</a>
+> #### 13、<a href="#user-content-超链接">超链接</a>
+> #### 14、<a href="#user-content-字体样式">字体样式</a>
 ---
 
 <h2 id="user-content-博客代码">Issues代码</h2>
 
-> ### 1、<a href="#user-content-图片对齐">图片对齐</a>
-> ### 2、<a href="#user-content-文本对齐">文本对齐</a>
-> ### 3、<a href="#user-content-添加B站视频">添加B站视频</a>
-> ### 4、<a href="#user-content-强调关键信息">强调关键信息</a>
-> ### 5、<a href="#user-content-自定义链接名称">自定义链接名称</a>
-> ### 6、<a href="#user-content-下拉列表">下拉列表</a>
+> #### 1、<a href="#user-content-图片对齐">图片对齐</a>
+> #### 2、<a href="#user-content-文本对齐">文本对齐</a>
+> #### 3、<a href="#user-content-添加B站视频">添加B站视频</a>
+> #### 4、<a href="#user-content-强调关键信息">强调关键信息</a>
+> #### 5、<a href="#user-content-自定义链接名称">自定义链接名称</a>
+> #### 6、<a href="#user-content-下拉列表">下拉列表</a>
 
 ---
 
 <h2 id="user-content-博客设置">config设置</h2>
 
-> ### 1、<a href="#user-content-在主页右上角添加外部链接">在主页右上角添加外部链接</a>
+> #### 1、<a href="#user-content-在主页右上角添加外部链接">在主页右上角添加外部链接</a>
 
 
 # 文章
@@ -295,7 +295,7 @@ $\theta=x^2$
 
 ---
 
-以上是输入三个"-"减号所构成的。
+> 提示：以上是输入三个"-"减号所构成的。
 
 **<a href="#user-content-基本语法">返回·Markdown基本语法·目录</a>**
 
@@ -357,23 +357,24 @@ $\theta=x^2$
 
 ```
 1、[回到顶部](#top)
-2、#### <a href="#user-content-字体颜色">字体颜色</a>
-3、#### <h2 id="user-content-字体颜色">字体颜色</h2>
+2、#### <a href="#user-content-点此跳转">点此跳转</a>
+3、#### <h2 id="user-content-跳转位置">跳转位置</h2>
 ```
 
 **演示：**
 
 #### [回到顶部](#top)
-#### <a href="#user-content-字体颜色">字体颜色</a>
-#### <h2 id="user-content-字体颜色">字体颜色</h2>
+#### <a href="#user-content-跳转位置">点此跳转</a>
+<h4 id="user-content-跳转位置">跳转位置</h4>
 
 
 **使用说明：**
 
 >  `[自定义名称](#top)`<br>
-> `<a href="#top">自定义名称</a>`<br>
-> `<span id="lable">自定义名称</span>`<br>
-> 此代码可以作为一建返回顶部、一建定位标题功能，例如在文章顶部设置一个名为“top”的标题，然后在文章底部设置`<a href="#top">回到顶部</a>`，点击后便可以直接回到顶部！
+> `<a href="#user-content-编号">自定义名称</a>`<br>
+> `<h4 id="user-content-编号">自定义名称</h4>`<br>
+> · 此代码可以作为一建返回顶部、一建定位标题功能，例如在文章顶部设置一个名为“top”的标题，然后在文章底部设置`<a href="#top">回到顶部</a>`，点击后便可以直接回到顶部！<br>
+> · 也可以自定义跳转位置，第二行代码是跳转链接，第三行代码是跳转位置，跳转链接中的编号需要与跳转位置的编号一样，且务必不要将编号设置成类似代码、英文等字符，否则代码将会失效！
 
 **<a href="#user-content-基本语法">返回·Markdown基本语法·目录</a>**
 
