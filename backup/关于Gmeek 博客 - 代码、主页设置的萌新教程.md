@@ -30,7 +30,7 @@
 
 > #### 1、<a href="#user-content-图片对齐">图片对齐</a>
 > #### 2、<a href="#user-content-文本对齐">文本对齐</a>
-> #### 3、<a href="#user-content-添加B站视频">添加B站视频</a>
+> #### 3、<a href="#user-content-添加哔站视频">添加B站视频</a>
 > #### 4、<a href="#user-content-强调关键信息">强调关键信息</a>
 > #### 5、<a href="#user-content-自定义链接名称">自定义链接名称</a>
 > #### 6、<a href="#user-content-下拉列表">下拉列表</a>
@@ -489,12 +489,12 @@ width="100" height="100">
 
 ---
 
-<h3 id="user-content-添加B站视频">添加B站视频</h3>
+<h3 id="user-content-添加哔站视频">添加B站视频</h3>
 
 **代码：**
 
-> `
-Gmeek-html<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=替换&bvid=替换&cid=替换&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="100%" height="460px"></iframe>
+`
+(Gmeek-html<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=替换&bvid=替换&cid=替换&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="100%" height="460px"></iframe>)
 `
 
 **演示：**
@@ -502,7 +502,7 @@ Gmeek-html<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=替�
 Gmeek-html<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=77576202&bvid=BV1AJ411X7ta?p=4&cid=132712486&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="100%" height="460px"></iframe>
 ```
 
-> 提示：需要将其添加至代码块内，详细请参考<a href="#user-content-代码块">代码块</a>，且此代码不会在预览模式启用，上传至博客后即可见到效果。
+> 提示：使用代码时请将开头和结尾的“()”删除，代码可添加至代码块内，详细请参考<a href="#user-content-代码块">代码块</a>，且此代码不会在预览模式启用，上传至博客后即可见到效果。
 
 **使用说明：**<br>
 > 复制想要添加到博客的B站视频链接到，如下：<br>
