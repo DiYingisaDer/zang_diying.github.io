@@ -209,6 +209,7 @@
 <br>**已添加br代码**<br>
 这是第一行<br>这是第二行<br>这是第三行
 
+> [!TIP]
 > 使用说明：<br>
 > 将代码`<br>`添加到句子尾部即可，若想要空出一行，可空出一行后将`<br>`添加到下一段句子的前端。<br>
 > 例如：<br>
@@ -296,6 +297,7 @@ $\theta=x^2$
 
 ---
 
+> [!TIP]
 > 提示：以上是输入三个"-"减号所构成的。
 
 **<a href="#user-content-基本语法">返回·Markdown基本语法·目录</a>**
@@ -338,8 +340,8 @@ $\theta=x^2$
 
 [id]:https://diyingisader.github.io/zang_diying.github.io/  "这是我的博客"
 
-**使用说明：**
-
+> [!TIP]
+> **使用说明：**<br>
 > `链接单次使用`<br>
 > `[自定义名称](自定义链接  "链接悬浮按钮")`<br>
 > `链接多次使用`<br>
@@ -369,8 +371,8 @@ $\theta=x^2$
 <h4 id="user-content-跳转位置">跳转位置</h4>
 
 
-**使用说明：**
-
+> [!TIP]
+> **使用说明：**<br>
 >  `[自定义名称](#top)`<br>
 > `<a href="#user-content-编号">自定义名称</a>`<br>
 > `<h4 id="user-content-编号">自定义名称</h4>`<br>
@@ -405,7 +407,10 @@ ULR格式：
 
 [![我的博客](https://avatars.githubusercontent.com/u/125773452?s=400&u=57a6081544c4c722f215e6f8fad54a4cc8cc82b4&v=4)](https://diyingisader.github.io/zang_diying.github.io/)
 
-> **使用方法：** <br>ULR格式：`[名称](网站链接)`<br>图片格式：`[![名称](图片链接)](网站链接)`
+> [!TIP]
+> **使用说明：**<br>
+> ULR格式：`[名称](网站链接)`<br>
+> 图片格式：`[![名称](图片链接)](网站链接)`
 
 **<a href="#user-content-基本语法">返回·Markdown基本语法·目录</a>**
 
@@ -455,7 +460,8 @@ width="100" height="100">
 width="100" height="100">
 </div>
 
-**使用说明：**<br>
+> [!TIP]
+> **使用说明：**<br>
 >` <div align=center>`（center=中间、left=左边、right=右边）<br>
 >` <img src="https://avatars.githubusercontent.com/u/125773452?s=400&u=57a6081544c4c722f215e6f8fad54a4cc8cc82b4&v=4" `（将双引号内的链接更替为你的图片链接，图片链接可以在网页中直接复制）<br>
 > `width="100" height="100">`（这窜代码可以更改图片的尺寸大小，width=宽、height=高）<br>
@@ -481,7 +487,8 @@ width="100" height="100">
 文本
 </div>
 
-**使用说明：**<br>
+> [!TIP]
+> **使用说明：**<br>
 > `<div align=center>`（center=中间、left=左边、right=右边）<br>
 >` 文本`（此处可任意输入）<br>
 > `</div>`（结尾）
@@ -503,9 +510,11 @@ width="100" height="100">
 Gmeek-html<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=77576202&bvid=BV1AJ411X7ta?p=4&cid=132712486&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="100%" height="460px"></iframe>
 ```
 
+> [!NOTE]
 > 提示：使用代码时请将开头和结尾的“()”删除，代码可添加至代码块内，详细请参考<a href="#user-content-代码块">代码块</a>，且此代码不会在预览模式启用，上传至博客后即可见到效果。
 
-**使用说明：**<br>
+> [!TIP]
+> **使用说明：**<br>
 > 复制想要添加到博客的B站视频链接到，如下：<br>
 > https://www.bilibili.com/video/BV17w4m1e7Lm/?spm_id_from=333.1007.tianma.1-1-1.click&vd_source=122727f6540d32e232b6b0645b9371cf <br>
 > 然后在此网站解析链接：<br>
@@ -559,8 +568,8 @@ Gmeek-html<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=7757
 > [!CAUTION]
 > #红色 谨慎 就某些行动的风险或负面结果提供建议。
 
-**使用说明：**
-
+> [!TIP]
+> **使用说明：**<br>
 > 五种含义的框，每种框的首行代表的是对应的含义，次行可填写自定义内容。
 
 **<a href="#user-content-博客代码">返回 · Issues代码 · 目录</a>**
@@ -579,8 +588,8 @@ Gmeek-html<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=7757
 
 [Github](https://github.com/)
 
-**使用说明：**
-
+> [!TIP]
+> **使用说明：**<br>
 > `[自定义名称](自定义超链接)`
 
 **<a href="#user-content-博客代码">返回 · Issues代码 · 目录</a>**
@@ -605,7 +614,8 @@ Gmeek-html<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=7757
 这是一段被收纳的文字。
     </details>
 
-**使用说明：**
+> [!TIP]
+> **使用说明：**<br>
 > `<details>`<br>
 > `  <summary>自定义名称</summary>`<br>
 > `自定义文字`<br>
@@ -627,8 +637,8 @@ Gmeek-html<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=7757
 "exlink":{"图标文本":"替换成自己的外部链接"},`
 ```
 
-**使用说明：**
-
+> [!TIP]
+> **使用说明：**<br>
 > 打开 `Code` 中的 `config.json`，然后将此代码复制到 ` "GMEEK_VERSION":"last"` 上面另起一行。<br>
 > "singlePage":["about"],<br>
 >
