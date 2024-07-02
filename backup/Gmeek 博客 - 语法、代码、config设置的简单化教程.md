@@ -1,53 +1,54 @@
 > [!NOTE]
-> ###  阅前提示 - 目前目录和返回键无法正常使用，请滑动鼠标阅览，谢谢！
-> **本篇文章部分内容取自 [Meekdai的博客](https://blog.meekdai.com/) 请大家支持！**<br>
+> ###  阅前提示 - 支持目录跳转！
+> **本篇文章部分内容取自 [Meekdai的博客](https://blog.meekdai.com/) 请大家支持原著！谢谢！**<br>
 > **本篇文章针对萌新搭建完成Gmeek博客后需要了解的一系列Markdown基本语法及可用扩展。**<br>
 > **因本文章是专门针对萌新的教程，每个章节都附带使用教程，所以看起来相对简单透彻。**
 
 ---
 
-# 目录
+<h1 id="user-content-目录">目录</h1>
 
- ## Markdown基本语法
+<h2 id="user-content-基本语法">Markdown基本语法</h2>
 
-> ### 1、[标题](#标题)
-> ### 2、[引用](#引用)
-> ### 3、[有序列表](#有序列表)
-> ### 4、[无序列表](#无序列表)
-> ### 5、[任务列表](#任务列表)
-> ### 6、[代码块](#代码块)
-> ### 7、[换行-目前未支持](#换行)
-> ### 8、[数学公式](#数学公式)
-> ### 9、[表格](#表格)
-> ### 10、[横线](#横线)
-> ### 11、[链接绑定](#链接绑定)
+> ### 1、<a href="#user-content-标题">标题</a>
+> ### 2、<a href="#user-content-引用">引用</a>
+> ### 3、<a href="#user-content-有序列表">有序列表</a>
+> ### 4、<a href="#user-content-无序列表">无序列表</a>
+> ### 5、<a href="#user-content-任务列表">任务列表</a>
+> ### 6、<a href="#user-content-代码块">代码块</a>
+> ### 7、<a href="#user-content-换行">换行</a>
+> ### 8、<a href="#user-content-数学公式">数学公式</a>
+> ### 9、<a href="#user-content-表格">表格</a>
+> ### 10、<a href="#user-content-横线">横线</a>
+> ### 11、<a href="#user-content-链接绑定">链接绑定</a>
 > ### 12、<a href="#user-content-点击跳转">点击跳转</a>
-> ### 13、[超链接](#超链接)
-> ### 13、[字体样式](#字体样式)
----
-## Issues代码
-
-> ### 1、[图片对齐](#图片对齐)
-> ### 2、[文本对齐](#文本对齐)
-> ### 3、[添加B站视频](#添加B站视频)
-> ### 4、[强调关键信息](#强调关键信息)
-> ### 5、[自定义链接名称](#自定义链接名称)
-> ### 6、[下拉列表](#下拉列表)
-
+> ### 13、<a href="#user-content-超链接">超链接</a>
+> ### 14、<a href="#user-content-字体样式">字体样式</a>
 ---
 
-## config设置
+<h2 id="user-content-博客代码">Issues代码</h2>
 
-> ### 1、[在主页右上角添加外部链接](#在主页右上角添加外部链接)
+> ### 1、<a href="#user-content-图片对齐">图片对齐</a>
+> ### 2、<a href="#user-content-文本对齐">文本对齐</a>
+> ### 3、<a href="#user-content-添加B站视频">添加B站视频</a>
+> ### 4、<a href="#user-content-强调关键信息">强调关键信息</a>
+> ### 5、<a href="#user-content-自定义链接名称">自定义链接名称</a>
+> ### 6、<a href="#user-content-下拉列表">下拉列表</a>
+
+---
+
+<h2 id="user-content-博客设置">config设置</h2>
+
+> ### 1、<a href="#user-content-在主页右上角添加外部链接">在主页右上角添加外部链接</a>
 
 
 # 文章
 
-## Markdown基本语法
+<h2 id="user-content-Markdown基本语法">Markdown基本语法</h2>
 
 ----
 
-### 标题
+<h3 id="user-content-标题">标题</h3>
 
 **代码：**
 
@@ -79,11 +80,11 @@
 
 ###### BiaoTi
 
-#### [返回 · Markdown基本语法 · 目录](#Markdown基本语法)
+**<a href="#user-content-基本语法">返回·Markdown基本语法·目录</a>**
 
 ---
 
-### 引用
+<h3 id="user-content-引用">引用</h3>
 
 **代码：**
 
@@ -95,11 +96,11 @@
 
 > 此时此刻显示在你面前的是引用
 
-#### [返回 · Markdown基本语法 · 目录](#Markdown基本语法)
+**<a href="#user-content-基本语法">返回·Markdown基本语法·目录</a>**
 
 ---
 
-### 有序列表
+<h3 id="user-content-有序列表">有序列表</h3>
 
 **代码：**
 
@@ -115,11 +116,11 @@
 2. 第二段
 3. 第三段
 
-#### [返回 · Markdown基本语法 · 目录](#Markdown基本语法)
+**<a href="#user-content-基本语法">返回·Markdown基本语法·目录</a>**
 
 ---
 
-### 无序列表
+<h3 id="user-content-无序列表">无序列表</h3>
 
 **代码：**
 
@@ -141,11 +142,11 @@
     - 第一段
     - 第二段
 
-#### [返回 · Markdown基本语法 · 目录](#Markdown基本语法)
+**<a href="#user-content-基本语法">返回·Markdown基本语法·目录</a>**
 
 ---
 
-### 任务列表
+<h3 id="user-content-任务列表">任务列表</h3>
 
 **代码：**
 
@@ -165,11 +166,11 @@
 - [ ] 赚到10w个小目标
 - [x] 做白日梦
 
-#### [返回 · Markdown基本语法 · 目录](#Markdown基本语法)
+**<a href="#user-content-基本语法">返回·Markdown基本语法·目录</a>**
 
 ---
 
-### 代码块
+<h3 id="user-content-代码块">代码块</h3>
 
 **代码：**
 
@@ -185,10 +186,11 @@
 这里是一句演示
 ```
 
-#### [返回 · Markdown基本语法 · 目录](#Markdown基本语法)
+**<a href="#user-content-基本语法">返回·Markdown基本语法·目录</a>**
 
 ---
-### 换行 - 目前未支持
+
+<h3 id="user-content-换行">换行</h3>
 
 **代码：**
 
@@ -213,11 +215,11 @@
 > **已添加br代码**`<br>`<br>
 > 这是第一行`<br>`<br>这是第二行`<br>`<br>这是第三行
 
-#### [返回 · Markdown基本语法 · 目录](#Markdown基本语法)
+**<a href="#user-content-基本语法">返回·Markdown基本语法·目录</a>**
 
 ---
 
-### 数学公式
+<h3 id="user-content-数学公式">数学公式</h3>
 
 普通数学公式
 
@@ -247,11 +249,11 @@ $\theta=x^2$
 
 $\theta=x^2$ 
 
-#### [返回 · Markdown基本语法 · 目录](#Markdown基本语法)
+**<a href="#user-content-基本语法">返回·Markdown基本语法·目录</a>**
 
 ---
 
-### 表格
+<h3 id="user-content-表格">表格</h3>
 
 **代码：**
 
@@ -275,11 +277,11 @@ $\theta=x^2$
 |  4   |   赚到10w个小目标    | 白日梦里啥都有，但千万别尿尿。 |
 |  5   |       做白日梦       |    额，怎么还是尿了....    | 
 
-#### [返回 · Markdown基本语法 · 目录](#Markdown基本语法)
+**<a href="#user-content-基本语法">返回·Markdown基本语法·目录</a>**
 
 ---
 
-### 横线
+<h3 id="user-content-横线">横线</h3>
 
 **代码：**
 
@@ -293,11 +295,11 @@ $\theta=x^2$
 
 以上是输入三个"-"减号所构成的。
 
-#### [返回 · Markdown基本语法 · 目录](#Markdown基本语法)
+**<a href="#user-content-基本语法">返回·Markdown基本语法·目录</a>**
 
 ---
 
-### 链接绑定
+<h3 id="user-content-链接绑定">链接绑定</h3>
 
 **代码：**
 
@@ -343,11 +345,11 @@ $\theta=x^2$
 > `第三次使用 [MyBlog][id]`<br>
 > `[id]:https://diyingisader.github.io/zang_diying.github.io/  "这是我的博客"`<br>
 
-#### [返回 · Markdown基本语法 · 目录](#Markdown基本语法)
+**<a href="#user-content-基本语法">返回·Markdown基本语法·目录</a>**
 
 ---
 
-#### <h2 id="user-content-点击跳转">点击跳转</h2>
+<h3 id="user-content-点击跳转">点击跳转</h3>
 
 **代码：**
 
@@ -371,11 +373,11 @@ $\theta=x^2$
 > `<span id="lable">自定义名称</span>`<br>
 > 此代码可以作为一建返回顶部、一建定位标题功能，例如在文章顶部设置一个名为“top”的标题，然后在文章底部设置`<a href="#top">回到顶部</a>`，点击后便可以直接回到顶部！
 
-#### [返回 · Markdown基本语法 · 目录](#Markdown基本语法)
+**<a href="#user-content-基本语法">返回·Markdown基本语法·目录</a>**
 
 ---
 
-### 超链接
+<h3 id="user-content-超链接">超链接</h3>
 
 **代码：**
 
@@ -401,11 +403,11 @@ ULR格式：
 
 > **使用方法：** <br>ULR格式：`[名称](网站链接)`<br>图片格式：`[![名称](图片链接)](网站链接)`
 
-#### [返回 · Markdown基本语法 · 目录](#Markdown基本语法)
+**<a href="#user-content-基本语法">返回·Markdown基本语法·目录</a>**
 
 ---
 
-### 字体样式
+<h3 id="user-content-字体样式">字体样式</h3>
 
 **代码：**
 
@@ -425,13 +427,13 @@ ULR格式：
 
 <u>下划线</u>
 
-#### [返回 · Markdown基本语法 · 目录](#Markdown基本语法)
+**<a href="#user-content-基本语法">返回·Markdown基本语法·目录</a>**
 
 ---
 
-## Issues代码
+<h2 id="user-content-Issues代码">Issues代码</h2>
 
-### 图片对齐
+<h3 id="user-content-图片对齐">图片对齐</h3>
 
 **代码：**
 
@@ -455,11 +457,11 @@ width="100" height="100">
 > `width="100" height="100">`（这窜代码可以更改图片的尺寸大小，width=宽、height=高）<br>
 > `</div>`（结尾）
 
-#### [返回 · Issues代码 · 目录](#Issues代码)
+**<a href="#user-content-博客代码">返回 · Issues代码 · 目录</a>**
 
 ---
 
-### 文本对齐
+<h3 id="user-content-文本对齐">文本对齐</h3>
 
 **代码：**
 
@@ -480,11 +482,11 @@ width="100" height="100">
 >` 文本`（此处可任意输入）<br>
 > `</div>`（结尾）
 
-#### [返回 · Issues代码 · 目录](#Issues代码)
+**<a href="#user-content-博客代码">返回 · Issues代码 · 目录</a>**
 
 ---
 
-### 添加B站视频
+<h3 id="user-content-添加B站视频">添加B站视频</h3>
 
 **代码：**
 
@@ -511,11 +513,11 @@ Gmeek-html<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=7757
 > 将这些字符替换到源代码中即可<br>
 > 提示：在Issues的编辑界面中只会显示源代码，将其上传后在博客中才能正常显示。
 
-#### [返回 · Issues代码 · 目录](#Issues代码)
+**<a href="#user-content-博客代码">返回 · Issues代码 · 目录</a>**
 
 ---
 
-### 强调关键信息
+<h3 id="user-content-强调关键信息">强调关键信息</h3>
 
 **代码：**
 
@@ -557,11 +559,11 @@ Gmeek-html<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=7757
 
 > 五种含义的框，每种框的首行代表的是对应的含义，次行可填写自定义内容。
 
-#### [返回 · Issues代码 · 目录](#Issues代码)
+**<a href="#user-content-博客代码">返回 · Issues代码 · 目录</a>**
 
 ---
 
-### 自定义链接名称
+<h3 id="user-content-自定义链接名称">自定义链接名称</h3>
 
 **代码：**
 
@@ -577,11 +579,11 @@ Gmeek-html<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=7757
 
 > `[自定义名称](自定义超链接)`
 
-#### [返回 · Issues代码 · 目录](#Issues代码)
+**<a href="#user-content-博客代码">返回 · Issues代码 · 目录</a>**
 
 ---
 
-### 下拉列表
+<h3 id="user-content-下拉列表">下拉列表</h3>
 
 **代码：**
 
@@ -605,15 +607,13 @@ Gmeek-html<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=7757
 > `自定义文字`<br>
 > `  </details>`（收纳结尾）
 
-#### [返回 · Issues代码 · 目录](#Issues代码)
+**<a href="#user-content-博客代码">返回 · Issues代码 · 目录</a>**
 
 ------
 
-## config设置
+<h2 id="user-content-config设置">config设置</h2>
 
-
-
-### 在主页右上角添加外部链接
+<h3 id="user-content-在主页右上角添加外部链接">在主页右上角添加外部链接</h3>
 
 **代码：**
 
@@ -634,4 +634,5 @@ Gmeek-html<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=7757
 > 图标网站：[Octicons | Primer](https://primer.style/foundations/icons)<br>
 > 
 > **在设置完成后必须手动构件Geek！**
-#### [返回 · config设置 · 目录](#config设置)
+
+**<a href="#user-content-博客设置">返回 · config设置 · 目录</a>**
