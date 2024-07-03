@@ -314,14 +314,14 @@ $\theta=x^2$
 ```
 1、[回到顶部](#top)
 2、<a href="#user-content-点此跳转">点此跳转</a>
-3、<h2 id="user-content-跳转位置">跳转位置</h2>
+3、< id="user-content-跳转位置">跳转位置>
 ```
 
 **演示：**
 
  [回到顶部](#top)
  <a href="#user-content-跳转位置">点此跳转</a>
-<h4 id="user-content-跳转位置">跳转位置</h4>
+<h4 id="user-content-跳转位置">跳转位置
 
 
 > [!TIP]
