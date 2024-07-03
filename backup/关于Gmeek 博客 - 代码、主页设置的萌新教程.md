@@ -1,5 +1,5 @@
 > [!NOTE]
-> ###  阅前提示 - 支持目录跳转！
+> ###  阅前提示
 > **本篇文章部分内容取自 [Meekdai的博客](https://blog.meekdai.com/) 请大家支持原著！谢谢！**<br>
 > **本篇文章针对萌新搭建完成Gmeek博客后需要了解的一系列Markdown基本语法及可用扩展。**<br>
 > **因本文章是专门针对萌新的教程，每个章节都附带使用教程，所以看起来相对简单透彻。**
@@ -313,14 +313,14 @@ $\theta=x^2$
 
 ```
 1、[回到顶部](#top)
-2、#### <a href="#user-content-点此跳转">点此跳转</a>
-3、#### <h2 id="user-content-跳转位置">跳转位置</h2>
+2、<a href="#user-content-点此跳转">点此跳转</a>
+3、<h2 id="user-content-跳转位置">跳转位置</h2>
 ```
 
 **演示：**
 
-#### [回到顶部](#top)
-#### <a href="#user-content-跳转位置">点此跳转</a>
+ [回到顶部](#top)
+ <a href="#user-content-跳转位置">点此跳转</a>
 <h4 id="user-content-跳转位置">跳转位置</h4>
 
 
