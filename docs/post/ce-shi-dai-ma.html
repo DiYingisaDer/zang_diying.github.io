@@ -9,7 +9,11 @@
         let theme = localStorage.getItem("meek_theme") || "light";
         document.documentElement.setAttribute("data-color-mode", theme);
     </script>
-<meta name="description" content="> 第一次测试
+<meta name="description" content="> 测试跳转位置：
+
+<h3 id='标题' tabindex='-1'>标题</h3>
+
+> 第一次测试
 
 <div class='toc'>
 <ol class='toc-list '>
@@ -178,7 +182,7 @@ function coll() {
 
 # 第三组 侧边目录 - 
 
-
+```css
 <style>
 ul {
     list-style-type: none;
@@ -205,19 +209,20 @@ li a:hover {
 
 <body>
 <ul>
-<li><a href='#home'>主页</a></li>
+<li><a href='#标题'>主页</a></li>
 <li><a href='#news'>新闻</a></li>
 <li><a href='#contact'>联系</a></li>
 <li><a href='#about'>关于</a></li>
 </ul>
+```
 
-
-
-> 测试跳转位置：
-
-<h3 id='标题' tabindex='-1'>标题</h3>。">
+。">
 <meta property="og:title" content="测试代码">
-<meta property="og:description" content="> 第一次测试
+<meta property="og:description" content="> 测试跳转位置：
+
+<h3 id='标题' tabindex='-1'>标题</h3>
+
+> 第一次测试
 
 <div class='toc'>
 <ol class='toc-list '>
@@ -386,7 +391,7 @@ function coll() {
 
 # 第三组 侧边目录 - 
 
-
+```css
 <style>
 ul {
     list-style-type: none;
@@ -413,22 +418,19 @@ li a:hover {
 
 <body>
 <ul>
-<li><a href='#home'>主页</a></li>
+<li><a href='#标题'>主页</a></li>
 <li><a href='#news'>新闻</a></li>
 <li><a href='#contact'>联系</a></li>
 <li><a href='#about'>关于</a></li>
 </ul>
+```
 
-
-
-> 测试跳转位置：
-
-<h3 id='标题' tabindex='-1'>标题</h3>。">
+。">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://DiYingisaDer.github.io/zang_diying.github.io/post/ce-shi-dai-ma.html">
 <meta property="og:image" content="https://avatars.githubusercontent.com/u/125773452?s=400&u=57a6081544c4c722f215e6f8fad54a4cc8cc82b4&v=4">
 <title>测试代码</title>
-
+<link href="//unpkg.com/@wooorm/starry-night@2.1.1/style/both.css" rel="stylesheet" />
 
 </head>
 <style>
@@ -483,6 +485,10 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 </div>
     <div id="content">
 <div class="markdown-body" id="postBody"><blockquote>
+<p>测试跳转位置：</p>
+</blockquote>
+<h3 id="user-content-标题" tabindex="-1">标题</h3>
+<blockquote>
 <p>第一次测试</p>
 </blockquote>
 <div>
@@ -641,40 +647,37 @@ function coll() {
 }
 &lt;/script&gt;
 <h1>第三组 侧边目录 -</h1>
-&lt;style&gt;
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 200px;
-    background-color: #f1f1f1;
+<div class="highlight highlight-source-css"><pre class="notranslate">&lt;<span class="pl-ent">style</span><span class="pl-c1">&gt;</span>
+<span class="pl-ent">ul</span> {
+    <span class="pl-c1">list-style-type</span><span class="pl-kos">:</span> none;
+    <span class="pl-c1">margin</span><span class="pl-kos">:</span> <span class="pl-c1">0</span>;
+    <span class="pl-c1">padding</span><span class="pl-kos">:</span> <span class="pl-c1">0</span>;
+    <span class="pl-c1">width</span><span class="pl-kos">:</span> <span class="pl-c1">200<span class="pl-smi">px</span></span>;
+    <span class="pl-c1">background-color</span><span class="pl-kos">:</span> <span class="pl-pds"><span class="pl-kos">#</span>f1f1f1</span>;
 }
  
-li a {
-    display: block;
-    color: #000;
-    padding: 8px 16px;
-    text-decoration: none;
+<span class="pl-ent">li</span> <span class="pl-ent">a</span> {
+    <span class="pl-c1">display</span><span class="pl-kos">:</span> block;
+    <span class="pl-c1">color</span><span class="pl-kos">:</span> <span class="pl-pds"><span class="pl-kos">#</span>000</span>;
+    <span class="pl-c1">padding</span><span class="pl-kos">:</span> <span class="pl-c1">8<span class="pl-smi">px</span></span> <span class="pl-c1">16<span class="pl-smi">px</span></span>;
+    <span class="pl-c1">text-decoration</span><span class="pl-kos">:</span> none;
 }
  
-/* 鼠标移动到选项上修改背景颜色 */
-li a:hover {
-    background-color: #555;
-    color: white;
+<span class="pl-c">/* 鼠标移动到选项上修改背景颜色 */</span>
+<span class="pl-ent">li</span> <span class="pl-ent">a</span><span class="pl-kos">:</span><span class="pl-c1">hover</span> {
+    <span class="pl-c1">background-color</span><span class="pl-kos">:</span> <span class="pl-pds"><span class="pl-kos">#</span>555</span>;
+    <span class="pl-c1">color</span><span class="pl-kos">:</span> white;
 }
-&lt;/style&gt;
+&lt;<span class="pl-c1">/</span><span class="pl-ent">style</span><span class="pl-c1">&gt;</span>
+&lt;<span class="pl-c1">/</span><span class="pl-ent">head</span><span class="pl-c1">&gt;</span>
 
-
-<ul>
-<li><a href="#home">主页</a></li>
-<li><a href="#news">新闻</a></li>
-<li><a href="#contact">联系</a></li>
-<li><a href="#about">关于</a></li>
-</ul>
-<blockquote>
-<p>测试跳转位置：</p>
-</blockquote>
-<h3 id="user-content-标题" tabindex="-1">标题</h3></div>
+&lt;<span class="pl-ent">body</span><span class="pl-c1">&gt;</span>
+&lt;<span class="pl-ent">ul</span><span class="pl-c1">&gt;</span>
+&lt;<span class="pl-ent">li</span><span class="pl-c1">&gt;</span>&lt;<span class="pl-ent">a</span> <span class="pl-ent">href</span><span class="pl-c1">=</span><span class="pl-s">"#标题"</span><span class="pl-c1">&gt;</span>主页&lt;<span class="pl-c1">/</span><span class="pl-ent">a</span><span class="pl-c1">&gt;</span>&lt;<span class="pl-c1">/</span><span class="pl-ent">li</span><span class="pl-c1">&gt;</span>
+&lt;<span class="pl-ent">li</span><span class="pl-c1">&gt;</span>&lt;<span class="pl-ent">a</span> <span class="pl-ent">href</span><span class="pl-c1">=</span><span class="pl-s">"#news"</span><span class="pl-c1">&gt;</span>新闻&lt;<span class="pl-c1">/</span><span class="pl-ent">a</span><span class="pl-c1">&gt;</span>&lt;<span class="pl-c1">/</span><span class="pl-ent">li</span><span class="pl-c1">&gt;</span>
+&lt;<span class="pl-ent">li</span><span class="pl-c1">&gt;</span>&lt;<span class="pl-ent">a</span> <span class="pl-ent">href</span><span class="pl-c1">=</span><span class="pl-s">"#contact"</span><span class="pl-c1">&gt;</span>联系&lt;<span class="pl-c1">/</span><span class="pl-ent">a</span><span class="pl-c1">&gt;</span>&lt;<span class="pl-c1">/</span><span class="pl-ent">li</span><span class="pl-c1">&gt;</span>
+&lt;<span class="pl-ent">li</span><span class="pl-c1">&gt;</span>&lt;<span class="pl-ent">a</span> <span class="pl-ent">href</span><span class="pl-c1">=</span><span class="pl-s">"#about"</span><span class="pl-c1">&gt;</span>关于&lt;<span class="pl-c1">/</span><span class="pl-ent">a</span><span class="pl-c1">&gt;</span>&lt;<span class="pl-c1">/</span><span class="pl-ent">li</span><span class="pl-c1">&gt;</span>
+&lt;<span class="pl-c1">/</span><span class="pl-ent">ul</span><span class="pl-c1">&gt;</span></pre></div></div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
 
 <button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
