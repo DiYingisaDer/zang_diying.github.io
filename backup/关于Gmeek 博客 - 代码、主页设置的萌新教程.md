@@ -6,63 +6,6 @@
 
 ---
 
-<h1 id="user-content-目录">目录</h1>
-
-<h2 id="user-content-基本语法">Markdown基本语法</h2>
-
-> #### 1、<a href="#user-content-标题">标题</a>
-
-> #### 2、<a href="#user-content-引用">引用</a>
-
-> #### 3、<a href="#user-content-有序列表">有序列表</a>
-
-> #### 4、<a href="#user-content-无序列表">无序列表</a>
-
-> #### 5、<a href="#user-content-任务列表">任务列表</a>
-
-> #### 6、<a href="#user-content-代码块">代码块</a>
-
-> #### 7、<a href="#user-content-换行">换行</a>
-
-> #### 8、<a href="#user-content-数学公式">数学公式</a>
-
-> #### 9、<a href="#user-content-表格">表格</a>
-
-> #### 10、<a href="#user-content-横线">横线</a>
-
-> #### 11、<a href="#user-content-链接绑定">链接绑定</a>
-
-> #### 12、<a href="#user-content-点击跳转">点击跳转</a>
-
-> #### 13、<a href="#user-content-超链接">超链接</a>
-
-> #### 14、<a href="#user-content-字体样式">字体样式</a>
-
----
-
-<h2 id="user-content-博客代码">Issues代码</h2>
-
-> #### 1、<a href="#user-content-图片对齐">图片对齐</a>
-
-> #### 2、<a href="#user-content-文本对齐">文本对齐</a>
-
-> #### 3、<a href="#user-content-添加哔站视频">添加B站视频</a>
-
-> #### 4、<a href="#user-content-强调关键信息">强调关键信息</a>
-
-> #### 5、<a href="#user-content-自定义链接名称">自定义链接名称</a>
-
-> #### 6、<a href="#user-content-下拉列表">下拉列表</a>
-
----
-
-<h2 id="user-content-博客设置">config设置</h2>
-
-> #### 1、<a href="#user-content-在主页右上角添加外部链接">在主页右上角添加外部链接</a>
-
-
-# 文章
-
 <h2 id="user-content-Markdown基本语法">Markdown基本语法</h2>
 
 ----
@@ -87,17 +30,7 @@
 
 **演示：**
 
-# BiaoTi
-
-## BiaoTi
-
-### BiaoTi
-
-#### BiaoTi
-
-##### BiaoTi
-
-###### BiaoTi
+![image](https://github.com/DiYingisaDer/zang_diying.github.io/assets/125773452/11cc0128-2b43-4f41-8270-fd9f9121d186)
 
 **<a href="#user-content-基本语法">返回·Markdown基本语法·目录</a>**
 
