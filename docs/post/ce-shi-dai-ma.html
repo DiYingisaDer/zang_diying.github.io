@@ -11,7 +11,7 @@
     </script>
 <meta name="description" content="此“标题”是测试对象：
 
-<h2 id='标题' tabindex='-1'>标题</h2>
+<h2 id='user-content-标题' tabindex='-1'>标题</h2>
 
 此内容只为拉长页面，测试用
 此内容只为拉长页面，测试用
@@ -83,7 +83,7 @@
 <meta property="og:title" content="测试代码">
 <meta property="og:description" content="此“标题”是测试对象：
 
-<h2 id='标题' tabindex='-1'>标题</h2>
+<h2 id='user-content-标题' tabindex='-1'>标题</h2>
 
 此内容只为拉长页面，测试用
 此内容只为拉长页面，测试用
@@ -282,14 +282,21 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <a href="#user-content-标题">标题</a></li>
 </ol>
 </div>
-<p>第三次测试——添加了<code class="notranslate">user-content-</code>、<code class="notranslate">[TOC]</code></p>
+<p>第三次测试——添加了<code class="notranslate">[TOC]</code><br>
+测试结果：失败，文章页面将<code class="notranslate">[TOC]</code>识别为了纯文本格式。</p>
 <p>[TOC]</p>
 <div>
 <ol>
 <li>
 <a href="#user-content-标题">标题</a></li>
 </ol>
-</div></div>
+</div>
+<p>第四次测试——在此页面提取代码进行测试<a href="https://www.bookstack.cn/read/mpe/zh-cn-toc.md#%5BTOC%5D%20%E4%BB%A5%E5%8F%8A%E8%BE%B9%E6%A0%8F%20TOC%20%E7%9A%84%E8%AE%BE%E7%BD%AE" rel="nofollow">2.4 目录列表（TOC）</a><br>
+侧室结果：</p>
+<p>[TOC]</p>
+<h1>标题1</h1>
+<h2>标题2 {ignore=true}</h2>
+<p>标题2 将会被目录忽略.</p></div>
 <div style="font-size:small;margin-top:8px;float:right;">感谢阅览！</div>
 
 <button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
