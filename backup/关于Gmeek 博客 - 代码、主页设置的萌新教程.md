@@ -604,4 +604,4 @@ Gmeek-html<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=7757
 
 **<a href="#user-content-博客设置">返回 · config设置 · 目录</a>**
 
-<!-- ##{"script":"<script src='https://blog.meekdai.com/assets/GmeekTOC.js'></script>"}## -->
+<!-- ##{"script":"<script src='https://blog.meekdai.com/assets/GmeekTOC.js'> ul { list-style-type: none; margin: 0; padding: 0; width: 200px; background-color: #f1f1f1; } li a { display: block; color: #000; padding: 8px 16px; text-decoration: none; } /* 鼠标移动到选项上修改背景颜色 */ li a:hover { background-color: #555; color: white; } </script>"}## -->
