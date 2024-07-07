@@ -315,7 +315,6 @@ $\theta=x^2$
 
  [回到顶部](#top)
  <a href="#user-content-跳转位置">点此跳转</a>
-<h4 id="user-content-跳转位置">跳转位置
 
 
 > [!TIP]
