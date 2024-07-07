@@ -6,9 +6,9 @@
 
 ---
 
-<h2 id="user-content-Markdown基本语法">Markdown基本语法</h2>
+<h3 id="user-content-Markdown基本语法">Markdown基本语法</h3>
 
-----
+
 
 <h3 id="user-content-标题">标题</h3>
 
@@ -32,7 +32,7 @@
 
 ![image](https://github.com/DiYingisaDer/zang_diying.github.io/assets/125773452/11cc0128-2b43-4f41-8270-fd9f9121d186)
 
-**<a href="#user-content-基本语法">返回·Markdown基本语法·目录</a>**
+
 
 ---
 
@@ -48,7 +48,7 @@
 
 > 此时此刻显示在你面前的是引用
 
-**<a href="#user-content-基本语法">返回·Markdown基本语法·目录</a>**
+
 
 ---
 
@@ -68,7 +68,7 @@
 2. 第二段
 3. 第三段
 
-**<a href="#user-content-基本语法">返回·Markdown基本语法·目录</a>**
+
 
 ---
 
@@ -94,7 +94,6 @@
     - 第一段
     - 第二段
 
-**<a href="#user-content-基本语法">返回·Markdown基本语法·目录</a>**
 
 ---
 
@@ -118,7 +117,6 @@
 - [ ] 赚到10w个小目标
 - [x] 做白日梦
 
-**<a href="#user-content-基本语法">返回·Markdown基本语法·目录</a>**
 
 ---
 
@@ -141,7 +139,6 @@
 > [!NOTE]
 > 注意：使用时请去掉代码框内的“|”删除。
 
-**<a href="#user-content-基本语法">返回·Markdown基本语法·目录</a>**
 
 ---
 
@@ -172,7 +169,6 @@
 > **已添加`<br>`代码**<br>
 > 这是第一行`<br>`<br>这是第二行`<br>`<br>这是第三行
 
-**<a href="#user-content-基本语法">返回·Markdown基本语法·目录</a>**
 
 ---
 
@@ -206,7 +202,7 @@ $\theta=x^2$
 
 $\theta=x^2$ 
 
-**<a href="#user-content-基本语法">返回·Markdown基本语法·目录</a>**
+
 
 ---
 
@@ -234,7 +230,7 @@ $\theta=x^2$
 |  4   |   赚到10w个小目标    | 白日梦里啥都有，但千万别尿尿。 |
 |  5   |       做白日梦       |    额，怎么还是尿了....    | 
 
-**<a href="#user-content-基本语法">返回·Markdown基本语法·目录</a>**
+
 
 ---
 
@@ -253,7 +249,6 @@ $\theta=x^2$
 > [!TIP]
 > 提示：以上是输入三个"-"减号所构成的。
 
-**<a href="#user-content-基本语法">返回·Markdown基本语法·目录</a>**
 
 ---
 
@@ -303,7 +298,6 @@ $\theta=x^2$
 > `第三次使用 [MyBlog][id]`<br>
 > `[id]:https://diyingisader.github.io/zang_diying.github.io/  "这是我的博客"`<br>
 
-**<a href="#user-content-基本语法">返回·Markdown基本语法·目录</a>**
 
 ---
 
@@ -332,7 +326,7 @@ $\theta=x^2$
 > · 此代码可以作为一建返回顶部、一建定位标题功能，例如在文章顶部设置一个名为“top”的标题，然后在文章底部设置`<a href="#top">回到顶部</a>`，点击后便可以直接回到顶部！<br>
 > · 也可以自定义跳转位置，第二行代码是跳转链接，第三行代码是跳转位置，跳转链接中的编号需要与跳转位置的编号一样，且务必不要将编号设置成类似代码、英文等字符，否则代码将会失效！
 
-**<a href="#user-content-基本语法">返回·Markdown基本语法·目录</a>**
+
 
 ---
 
@@ -389,11 +383,10 @@ ULR格式：
 
 <u>下划线</u>
 
-**<a href="#user-content-基本语法">返回·Markdown基本语法·目录</a>**
 
 ---
 
-<h2 id="user-content-Issues代码">Issues代码</h2>
+<h3 id="user-content-Issues代码">Issues代码</h3>
 
 <h3 id="user-content-图片对齐">图片对齐</h3>
 
@@ -420,7 +413,6 @@ width="100" height="100">
 > `width="100" height="100">`（这窜代码可以更改图片的尺寸大小，width=宽、height=高）<br>
 > `</div>`（结尾）
 
-**<a href="#user-content-博客代码">返回 · Issues代码 · 目录</a>**
 
 ---
 
@@ -446,7 +438,6 @@ width="100" height="100">
 >` 文本`（此处可任意输入）<br>
 > `</div>`（结尾）
 
-**<a href="#user-content-博客代码">返回 · Issues代码 · 目录</a>**
 
 ---
 
@@ -479,7 +470,7 @@ Gmeek-html<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=4141
 > 将这些字符替换到源代码中即可<br>
 > 提示：在Issues的编辑界面中只会显示源代码，将其上传后在博客中才能正常显示。
 
-**<a href="#user-content-博客代码">返回 · Issues代码 · 目录</a>**
+
 
 ---
 
@@ -525,7 +516,7 @@ Gmeek-html<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=4141
 > **使用说明：**<br>
 > 五种含义的框，每种框的首行代表的是对应的含义，次行可填写自定义内容。
 
-**<a href="#user-content-博客代码">返回 · Issues代码 · 目录</a>**
+
 
 ---
 
@@ -545,7 +536,7 @@ Gmeek-html<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=4141
 > **使用说明：**<br>
 > `[自定义名称](自定义超链接)`
 
-**<a href="#user-content-博客代码">返回 · Issues代码 · 目录</a>**
+
 
 ---
 
@@ -574,11 +565,11 @@ Gmeek-html<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=4141
 > `自定义文字`<br>
 > `  </details>`（收纳结尾）
 
-**<a href="#user-content-博客代码">返回 · Issues代码 · 目录</a>**
+
 
 ------
 
-<h2 id="user-content-config设置">config设置</h2>
+<h3 id="user-content-config设置">config设置</h3>
 
 <h3 id="user-content-在主页右上角添加外部链接">在主页右上角添加外部链接</h3>
 
@@ -602,6 +593,6 @@ Gmeek-html<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=4141
 > 
 > **在设置完成后必须手动构件Geek！**
 
-**<a href="#user-content-博客设置">返回 · config设置 · 目录</a>**
+
 
 <!-- ##{"script":"<script src='https://blog.meekdai.com/assets/GmeekTOC.js'></script>"}## -->
