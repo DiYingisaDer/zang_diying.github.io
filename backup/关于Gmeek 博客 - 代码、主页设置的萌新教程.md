@@ -450,7 +450,7 @@ width="100" height="100">
 
 **演示：**
 ```
-Gmeek-html<iframe src="https://player.bilibili.com/player.html?isOutside=true&aid=414125550&bvid=BV1yV411z7Yk&cid=222016010&p=1&autoplay=0&high_quality=1&danmaku=0" width="100%" height="450" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="max-width:100%;" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts"> </iframe>
+Gmeek-html<iframe src="//player.bilibili.com/player.html?bvid=BV1yV411z7Yk" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
 ```
 
 > [!NOTE]
