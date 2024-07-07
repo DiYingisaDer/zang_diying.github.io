@@ -6,7 +6,7 @@
 
 ---
 
-<h3 id="user-content-Markdown基本语法">Markdown基本语法</h3>
+<h2 id="user-content-Markdown基本语法">Markdown基本语法</h2>
 
 
 
@@ -385,7 +385,7 @@ ULR格式：
 
 ---
 
-<h3 id="user-content-Issues代码">Issues代码</h3>
+<h2 id="user-content-Issues代码">Issues代码</h2>
 
 <h3 id="user-content-图片对齐">图片对齐</h3>
 
@@ -568,7 +568,7 @@ Gmeek-html<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=4141
 
 ------
 
-<h3 id="user-content-config设置">config设置</h3>
+<h2 id="user-content-config设置">config设置</h2>
 
 <h3 id="user-content-在主页右上角添加外部链接">在主页右上角添加外部链接</h3>
 
