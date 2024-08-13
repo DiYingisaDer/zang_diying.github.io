@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html data-color-mode="light" data-dark-theme="dark" data-light-theme="light" lang="zh-CN">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href='https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/Primer/21.0.7/primer.css' rel='stylesheet' />
+    
+    <link rel="icon" href="https://avatars.githubusercontent.com/u/125773452?s=400&u=57a6081544c4c722f215e6f8fad54a4cc8cc82b4&v=4"><script>
+        let theme = localStorage.getItem("meek_theme") || "light";
+        document.documentElement.setAttribute("data-color-mode", theme);
+    </script>
+<meta name="description" content="> [!NOTE]
+> ###  阅前提示
+> **本篇文章部分内容取自 [Meekdai的博客](https://blog.meekdai.com/) 请大家支持原著！谢谢！**<br>
+> **本篇文章针对萌新搭建完成Gmeek博客后需要了解的一系列Markdown基本语法及可用扩展。">
+<meta property="og:title" content="关于Gmeek 博客 - 代码、主页设置的萌新教程">
+<meta property="og:description" content="> [!NOTE]
+> ###  阅前提示
+> **本篇文章部分内容取自 [Meekdai的博客](https://blog.meekdai.com/) 请大家支持原著！谢谢！**<br>
+> **本篇文章针对萌新搭建完成Gmeek博客后需要了解的一系列Markdown基本语法及可用扩展。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://DiYingisaDer.github.io/zang_diying.github.io/post/guan-yu-Gmeek%20-bo-ke-%20-%20-dai-ma-%E3%80%81-zhu-ye-she-zhi-de-meng-xin-jiao-cheng.html">
+<meta property="og:image" content="https://avatars.githubusercontent.com/u/125773452?s=400&u=57a6081544c4c722f215e6f8fad54a4cc8cc82b4&v=4">
+<title>关于Gmeek 博客 - 代码、主页设置的萌新教程</title>
+
+
+
+</head>
+<style>
+body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;padding: 45px;font-size: 16px;font-family: sans-serif;line-height: 1.25;}
+#header{display:flex;padding-bottom:8px;border-bottom: 1px solid var(--borderColor-muted, var(--color-border-muted));margin-bottom: 16px;}
+#footer {margin-top:64px; text-align: center;font-size: small;}
+
+</style>
+
+<style>
+.postTitle{margin: auto 0;font-size:40px;font-weight:bold;}
+.title-right{display:flex;margin:auto 0 0 auto;}
+.title-right .circle{padding: 14px 16px;margin-right:8px;}
+#postBody{border-bottom: 1px solid var(--color-border-default);padding-bottom:36px;}
+#postBody hr{height:2px;}
+#cmButton{height:48px;margin-top:48px;}
+#comments{margin-top:64px;}
+.g-emoji{font-size:24px;}
+@media (max-width: 600px) {
+    body {padding: 8px;}
+    .postTitle{font-size:24px;}
+}
+.copy-feedback {
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 50px;
+    color: var(--color-fg-on-emphasis);
+    background-color: var(--color-fg-muted);
+    border-radius: 3px;
+    padding: 5px 8px;
+    font-size: 12px;
+}
+</style>
+<style>.markdown-alert{padding:0.5rem 1rem;margin-bottom:1rem;border-left:.25em solid var(--borderColor-default,var(--color-border-default));}.markdown-alert .markdown-alert-title {display:flex;font-weight:var(--base-text-weight-medium,500);align-items:center;line-height:1;}.markdown-alert>:first-child {margin-top:0;}.markdown-alert>:last-child {margin-bottom:0;}</style><style>.markdown-alert.markdown-alert-note {border-left-color:var(--borderColor-accent-emphasis, var(--color-accent-emphasis));background-color:var(--color-accent-subtle);}.markdown-alert.markdown-alert-note .markdown-alert-title {color: var(--fgColor-accent,var(--color-accent-fg));}</style><style>.markdown-alert.markdown-alert-tip {border-left-color:var(--borderColor-success-emphasis, var(--color-success-emphasis));background-color:var(--color-success-subtle);}.markdown-alert.markdown-alert-tip .markdown-alert-title {color: var(--fgColor-success,var(--color-success-fg));}</style><style>.markdown-alert.markdown-alert-important {border-left-color:var(--borderColor-done-emphasis, var(--color-done-emphasis));background-color:var(--color-done-subtle);}.markdown-alert.markdown-alert-important .markdown-alert-title {color: var(--fgColor-done,var(--color-done-fg));}</style><style>.markdown-alert.markdown-alert-warning {border-left-color:var(--borderColor-attention-emphasis, var(--color-attention-emphasis));background-color:var(--color-attention-subtle);}.markdown-alert.markdown-alert-warning .markdown-alert-title {color: var(--fgColor-attention,var(--color-attention-fg));}</style><style>.markdown-alert.markdown-alert-caution {border-left-color:var(--borderColor-danger-emphasis, var(--color-danger-emphasis));background-color:var(--color-danger-subtle);}.markdown-alert.markdown-alert-caution .markdown-alert-title {color: var(--fgColor-danger,var(--color-danger-fg));}</style>
+
+
+
+<body>
+    <div id="header">
+<h1 class="postTitle">关于Gmeek 博客 - 代码、主页设置的萌新教程</h1>
+<div class="title-right">
+    <a href="https://DiYingisaDer.github.io/zang_diying.github.io" id="buttonHome" class="btn btn-invisible circle" title="首页">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathHome" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+    <a href="https://github.com/DiYingisaDer/zang_diying.github.io/issues/7" target="_blank" class="btn btn-invisible circle" title="Issue">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathIssue" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+
+    <a class="btn btn-invisible circle" onclick="modeSwitch();" title="切换主题">
+        <svg class="octicon" width="16" height="16" >
+            <path id="themeSwitch" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+
+</div>
+</div>
+    <div id="content">
+<div class="markdown-body" id="postBody"><div class="markdown-alert markdown-alert-note"><p class="markdown-alert-title"><svg class="octicon octicon-info mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg>Note</p>
+<h3>阅前提示</h3>
+<p><strong>本篇文章部分内容取自 <a href="https://blog.meekdai.com/" rel="nofollow">Meekdai的博客</a> 请大家支持原著！谢谢！</strong><br><br>
+<strong>本篇文章针对萌新搭建完成Gmeek博客后需要了解的一系列Markdown基本语法及可用扩展。</strong><br><br>
+<strong>因本文章是专门针对萌新的教程，每个章节都附带使用教程，所以看起来相对简单透彻。</strong></p>
+</div>
+<hr>
+<h2 id="user-content-markdown基本语法">Markdown基本语法</h2>
+<h3 id="user-content-标题">标题</h3>
+<p><strong>代码：</strong></p>
+<pre class="notranslate"><code class="notranslate"># BiaoTi
+
+## BiaoTi
+
+### BiaoTi
+
+#### BiaoTi
+
+##### BiaoTi
+
+###### BiaoTi
+</code></pre>
+<p><strong>演示：</strong></p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/DiYingisaDer/zang_diying.github.io/assets/125773452/11cc0128-2b43-4f41-8270-fd9f9121d186"><img src="https://github.com/DiYingisaDer/zang_diying.github.io/assets/125773452/11cc0128-2b43-4f41-8270-fd9f9121d186" alt="image" style="max-width: 100%;"></a></p>
+<hr>
+<h3 id="user-content-引用">引用</h3>
+<p><strong>代码：</strong></p>
+<pre class="notranslate"><code class="notranslate">&gt; 此时此刻显示在你面前的是引用
+</code></pre>
+<p><strong>演示：</strong></p>
+<blockquote>
+<p>此时此刻显示在你面前的是引用</p>
+</blockquote>
+<hr>
+<h3 id="user-content-有序列表">有序列表</h3>
+<p><strong>代码：</strong></p>
+<pre class="notranslate"><code class="notranslate">1. 第一段
+2. 第二段
+3. 第三段
+</code></pre>
+<p><strong>演示：</strong></p>
+<ol>
+<li>第一段</li>
+<li>第二段</li>
+<li>第三段</li>
+</ol>
+<hr>
+<h3 id="user-content-无序列表">无序列表</h3>
+<p><strong>代码：</strong></p>
+<pre class="notranslate"><code class="notranslate">- 第一章
+- 第二章
+  - 第一节
+  - 第二节
+    - 第一段
+    - 第二段
+</code></pre>
+<p><strong>演示：</strong></p>
+<ul>
+<li>第一章</li>
+<li>第二章
+<ul>
+<li>第一节</li>
+<li>第二节
+<ul>
+<li>第一段</li>
+<li>第二段</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="user-content-任务列表">任务列表</h3>
+<p><strong>代码：</strong></p>
+<pre class="notranslate"><code class="notranslate">- [ ] 在月球向地球蹦极
+- [ ] 单手举起一座山
+- [ ] 时速1w公里的跑酷运动
+- [ ] 赚到10w个小目标
+- [x] 做白日梦
+</code></pre>
+<p><strong>演示：</strong></p>
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> 在月球向地球蹦极</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> 单手举起一座山</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> 时速1w公里的跑酷运动</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> 赚到10w个小目标</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""> 做白日梦</li>
+</ul>
+<hr>
+<h3 id="user-content-代码块">代码块</h3>
+<p><strong>代码：</strong></p>
+<pre class="notranslate"><code class="notranslate">|  ```
+|  添加内容
+|  ```
+</code></pre>
+<p><strong>演示：</strong></p>
+<pre class="notranslate"><code class="notranslate">这里是一句演示
+</code></pre>
+<div class="markdown-alert markdown-alert-note"><p class="markdown-alert-title"><svg class="octicon octicon-info mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg>Note</p><p>注意：使用时请去掉代码框内的“|”删除。</p>
+</div>
+<hr>
+<h3 id="user-content-换行">换行</h3>
+<p><strong>代码：</strong></p>
+<pre class="notranslate"><code class="notranslate">&lt;br&gt;
+</code></pre>
+<p><strong>演示：</strong></p>
+<p><strong>未添加br代码</strong><br><br>
+这是第一行 这是第二行<br><br>
+<br><br>
+<strong>已添加br代码</strong><br><br>
+这是第一行<br>这是第二行<br>这是第三行</p>
+<div class="markdown-alert markdown-alert-tip"><p class="markdown-alert-title"><svg class="octicon octicon-light-bulb mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 0 1-1.484.211c-.04-.282-.163-.547-.37-.847a8.456 8.456 0 0 0-.542-.68c-.084-.1-.173-.205-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259-.095.115-.184.22-.268.319-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.751.751 0 0 1-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848.075-.088.147-.173.213-.253.561-.679.985-1.32.985-2.304 0-2.06-1.637-3.75-4-3.75ZM5.75 12h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5ZM6 15.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Z"></path></svg>Tip</p><p>使用说明：<br><br>
+将代码<code class="notranslate">&lt;br&gt;</code>添加到句子尾部即可，若想要空出一行，可空出一行后将<code class="notranslate">&lt;br&gt;</code>添加到下一段句子的前端。<br></p>
+</div>
+<blockquote>
+<p>例如：<br><br>
+<strong>未添加<code class="notranslate">&lt;br&gt;</code>代码</strong><br><br>
+这是第一行 这是第二行<br></p>
+<p><strong>已添加<code class="notranslate">&lt;br&gt;</code>代码</strong><br><br>
+这是第一行<code class="notranslate">&lt;br&gt;</code><br>这是第二行<code class="notranslate">&lt;br&gt;</code><br>这是第三行</p>
+</blockquote>
+<hr>
+<h3 id="user-content-数学公式">数学公式</h3>
+<p>普通数学公式</p>
+<p><strong>代码：</strong></p>
+<pre class="notranslate"><code class="notranslate">$$
+\frac{\partial f}{\partial x}= 2\sqrt{a}x
+$$
+</code></pre>
+<p><strong>演示：</strong></p>
+<p>$$
+\frac{\partial f}{\partial x}= 2\sqrt{a}x
+$$</p>
+<p>行类数学公式</p>
+<p><strong>代码：</strong></p>
+<pre class="notranslate"><code class="notranslate">$\theta=x^2$ 
+</code></pre>
+<p><strong>演示：</strong></p>
+<p>$\theta=x^2$</p>
+<hr>
+<h3 id="user-content-表格">表格</h3>
+<p><strong>代码：</strong></p>
+<pre class="notranslate"><code class="notranslate">| 序号 |         目标         |            完成感受            |
+| :--: | :------------------: | :----------------------------: |
+|  1   |   在月球向地球蹦极   |  梦里啥都能干，但千万别尿尿。  |
+|  2   |    单手举起一座山    |  梦里啥都能干，但千万别尿尿。  |
+|  3   | 时速1w公里的跑酷运动 |  梦里啥都能干，但千万别尿尿。  |
+|  4   |   赚到10w个小目标    | 白日梦里啥都有，但千万别尿尿。 |
+|  5   |       做白日梦       |    额，怎么还是尿了....    | 
+</code></pre>
+<p><strong>演示:</strong></p>
+<markdown-accessiblity-table><table role="table">
+<thead>
+<tr>
+<th align="center">序号</th>
+<th align="center">目标</th>
+<th align="center">完成感受</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">1</td>
+<td align="center">在月球向地球蹦极</td>
+<td align="center">梦里啥都能干，但千万别尿尿。</td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td align="center">单手举起一座山</td>
+<td align="center">梦里啥都能干，但千万别尿尿。</td>
+</tr>
+<tr>
+<td align="center">3</td>
+<td align="center">时速1w公里的跑酷运动</td>
+<td align="center">梦里啥都能干，但千万别尿尿。</td>
+</tr>
+<tr>
+<td align="center">4</td>
+<td align="center">赚到10w个小目标</td>
+<td align="center">白日梦里啥都有，但千万别尿尿。</td>
+</tr>
+<tr>
+<td align="center">5</td>
+<td align="center">做白日梦</td>
+<td align="center">额，怎么还是尿了....</td>
+</tr>
+</tbody>
+</table></markdown-accessiblity-table>
+<hr>
+<h3 id="user-content-横线">横线</h3>
+<p><strong>代码：</strong></p>
+<pre class="notranslate"><code class="notranslate">---
+</code></pre>
+<p><strong>演示：</strong></p>
+<hr>
+<div class="markdown-alert markdown-alert-tip"><p class="markdown-alert-title"><svg class="octicon octicon-light-bulb mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 0 1-1.484.211c-.04-.282-.163-.547-.37-.847a8.456 8.456 0 0 0-.542-.68c-.084-.1-.173-.205-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259-.095.115-.184.22-.268.319-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.751.751 0 0 1-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848.075-.088.147-.173.213-.253.561-.679.985-1.32.985-2.304 0-2.06-1.637-3.75-4-3.75ZM5.75 12h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5ZM6 15.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Z"></path></svg>Tip</p><p>提示：以上是输入三个"-"减号所构成的。</p>
+</div>
+<hr>
+<h3 id="user-content-链接绑定">链接绑定</h3>
+<p><strong>代码：</strong></p>
+<pre class="notranslate"><code class="notranslate">链接单次使用
+
+[MyBlog](https://diyingisader.github.io/zang_diying.github.io/  "这是我的博客")
+
+链接多次使用
+
+第一次使用 [MyBlog][id]
+
+第二次使用 [MyBlog][id]
+
+第三次使用 [MyBlog][id]
+
+[id]:https://diyingisader.github.io/zang_diying.github.io/  "这是我的博客"
+</code></pre>
+<p><strong>演示：</strong></p>
+<p>链接单次使用</p>
+<p><a href="https://diyingisader.github.io/zang_diying.github.io/" title="这是我的博客" rel="nofollow">MyBlog</a></p>
+<p>链接多次使用</p>
+<p>第一次使用 <a href="https://diyingisader.github.io/zang_diying.github.io/" title="这是我的博客" rel="nofollow">MyBlog</a></p>
+<p>第二次使用 <a href="https://diyingisader.github.io/zang_diying.github.io/" title="这是我的博客" rel="nofollow">MyBlog</a></p>
+<p>第三次使用 <a href="https://diyingisader.github.io/zang_diying.github.io/" title="这是我的博客" rel="nofollow">MyBlog</a></p>
+<div class="markdown-alert markdown-alert-tip"><p class="markdown-alert-title"><svg class="octicon octicon-light-bulb mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 0 1-1.484.211c-.04-.282-.163-.547-.37-.847a8.456 8.456 0 0 0-.542-.68c-.084-.1-.173-.205-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259-.095.115-.184.22-.268.319-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.751.751 0 0 1-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848.075-.088.147-.173.213-.253.561-.679.985-1.32.985-2.304 0-2.06-1.637-3.75-4-3.75ZM5.75 12h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5ZM6 15.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Z"></path></svg>Tip</p><p><strong>使用说明：</strong><br><br>
+<code class="notranslate">链接单次使用</code><br><br>
+<code class="notranslate">[自定义名称](自定义链接  "链接悬浮按钮")</code><br><br>
+<code class="notranslate">链接多次使用</code><br><br>
+<code class="notranslate">第一次使用 [MyBlog][id]</code><br><br>
+<code class="notranslate">第二次使用 [MyBlog][id]</code><br><br>
+<code class="notranslate">第三次使用 [MyBlog][id]</code><br><br>
+<code class="notranslate">[id]:https://diyingisader.github.io/zang_diying.github.io/  "这是我的博客"</code><br></p>
+</div>
+<hr>
+<h3 id="user-content-点击跳转">点击跳转</h3>
+<p><strong>代码：</strong></p>
+<pre class="notranslate"><code class="notranslate">1、[回到顶部](#top)
+2、&lt;a href="#user-content-点此跳转"&gt;点此跳转&lt;/a&gt;
+3、&lt; id="user-content-跳转位置"&gt;跳转位置&gt;
+</code></pre>
+<p><strong>演示：</strong></p>
+<p><a href="#top">回到顶部</a><br>
+<a href="#user-content-跳转位置">点此跳转</a></p>
+<div class="markdown-alert markdown-alert-tip"><p class="markdown-alert-title"><svg class="octicon octicon-light-bulb mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 0 1-1.484.211c-.04-.282-.163-.547-.37-.847a8.456 8.456 0 0 0-.542-.68c-.084-.1-.173-.205-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259-.095.115-.184.22-.268.319-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.751.751 0 0 1-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848.075-.088.147-.173.213-.253.561-.679.985-1.32.985-2.304 0-2.06-1.637-3.75-4-3.75ZM5.75 12h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5ZM6 15.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Z"></path></svg>Tip</p><p><strong>使用说明：</strong><br><br>
+<code class="notranslate">[自定义名称](#top)</code><br><br>
+<code class="notranslate">&lt;a href="#user-content-编号"&gt;自定义名称&lt;/a&gt;</code><br><br>
+<code class="notranslate">&lt;h4 id="user-content-编号"&gt;自定义名称&lt;/h4&gt;</code><br><br>
+· 此代码可以作为一建返回顶部、一建定位标题功能，例如在文章顶部设置一个名为“top”的标题，然后在文章底部设置<code class="notranslate">&lt;a href="#top"&gt;回到顶部&lt;/a&gt;</code>，点击后便可以直接回到顶部！<br><br>
+· 也可以自定义跳转位置，第二行代码是跳转链接，第三行代码是跳转位置，跳转链接中的编号需要与跳转位置的编号一样，且务必不要将编号设置成类似代码、英文等字符，否则代码将会失效！</p>
+</div>
+<hr>
+<h3 id="user-content-超链接">超链接</h3>
+<p><strong>代码：</strong></p>
+<pre class="notranslate"><code class="notranslate">ULR格式：
+
+[Zang.帝樱的博客 (diyingisader.github.io)](https://diyingisader.github.io/zang_diying.github.io/)
+
+图片格式：
+
+[![我的博客](https://avatars.githubusercontent.com/u/125773452?s=400&amp;u=57a6081544c4c722f215e6f8fad54a4cc8cc82b4&amp;v=4)](https://diyingisader.github.io/zang_diying.github.io/)
+</code></pre>
+<p><strong>演示：</strong></p>
+<p>ULR格式：</p>
+<p><a href="https://diyingisader.github.io/zang_diying.github.io/" rel="nofollow">Zang.帝樱的博客 (diyingisader.github.io)</a></p>
+<p>图片格式：</p>
+<p><a href="https://diyingisader.github.io/zang_diying.github.io/" rel="nofollow"><img src="https://avatars.githubusercontent.com/u/125773452?s=400&amp;u=57a6081544c4c722f215e6f8fad54a4cc8cc82b4&amp;v=4" alt="我的博客" style="max-width: 100%;"></a></p>
+<div class="markdown-alert markdown-alert-tip"><p class="markdown-alert-title"><svg class="octicon octicon-light-bulb mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 0 1-1.484.211c-.04-.282-.163-.547-.37-.847a8.456 8.456 0 0 0-.542-.68c-.084-.1-.173-.205-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259-.095.115-.184.22-.268.319-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.751.751 0 0 1-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848.075-.088.147-.173.213-.253.561-.679.985-1.32.985-2.304 0-2.06-1.637-3.75-4-3.75ZM5.75 12h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5ZM6 15.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Z"></path></svg>Tip</p><p><strong>使用说明：</strong><br><br>
+ULR格式：<code class="notranslate">[名称](网站链接)</code><br><br>
+图片格式：<code class="notranslate">[![名称](图片链接)](网站链接)</code></p>
+</div>
+<p><strong><a href="#user-content-基本语法">返回·Markdown基本语法·目录</a></strong></p>
+<hr>
+<h3 id="user-content-字体样式">字体样式</h3>
+<p><strong>代码：</strong></p>
+<pre class="notranslate"><code class="notranslate">*斜体*
+
+**加粗**
+
+&lt;u&gt;下划线&lt;/u&gt;
+</code></pre>
+<p><strong>演示：</strong></p>
+<p><em>斜体</em></p>
+<p><strong>加粗</strong></p>
+<p>下划线</p>
+<hr>
+<h2 id="user-content-issues代码">Issues代码</h2>
+<h3 id="user-content-图片对齐">图片对齐</h3>
+<p><strong>代码：</strong></p>
+<pre class="notranslate"><code class="notranslate">&lt;div align=center&gt;
+&lt;img src="https://avatars.githubusercontent.com/u/125773452?s=400&amp;u=57a6081544c4c722f215e6f8fad54a4cc8cc82b4&amp;v=4" 
+width="100" height="100"&gt;
+&lt;/div&gt;
+</code></pre>
+<p><strong>演示：</strong></p>
+<div align="center">
+<a target="_blank" rel="noopener noreferrer nofollow" href="https://avatars.githubusercontent.com/u/125773452?s=400&amp;u=57a6081544c4c722f215e6f8fad54a4cc8cc82b4&amp;v=4"><img src="https://avatars.githubusercontent.com/u/125773452?s=400&amp;u=57a6081544c4c722f215e6f8fad54a4cc8cc82b4&amp;v=4" width="100" height="100" style="max-width: 100%;"></a>
+</div>
+<div class="markdown-alert markdown-alert-tip"><p class="markdown-alert-title"><svg class="octicon octicon-light-bulb mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 0 1-1.484.211c-.04-.282-.163-.547-.37-.847a8.456 8.456 0 0 0-.542-.68c-.084-.1-.173-.205-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259-.095.115-.184.22-.268.319-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.751.751 0 0 1-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848.075-.088.147-.173.213-.253.561-.679.985-1.32.985-2.304 0-2.06-1.637-3.75-4-3.75ZM5.75 12h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5ZM6 15.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Z"></path></svg>Tip</p><p><strong>使用说明：</strong><br><br>
+<code class="notranslate"> &lt;div align=center&gt;</code>（center=中间、left=左边、right=右边）<br><br>
+<code class="notranslate">&lt;img src="https://avatars.githubusercontent.com/u/125773452?s=400&amp;u=57a6081544c4c722f215e6f8fad54a4cc8cc82b4&amp;v=4"</code>（将双引号内的链接更替为你的图片链接，图片链接可以在网页中直接复制）<br><br>
+<code class="notranslate">width="100" height="100"&gt;</code>（这窜代码可以更改图片的尺寸大小，width=宽、height=高）<br><br>
+<code class="notranslate">&lt;/div&gt;</code>（结尾）</p>
+</div>
+<hr>
+<h3 id="user-content-文本对齐">文本对齐</h3>
+<p><strong>代码：</strong></p>
+<pre class="notranslate"><code class="notranslate">&lt;div align=center&gt;
+文本
+&lt;/div&gt;
+</code></pre>
+<p><strong>演示：</strong></p>
+<div align="center">
+文本
+</div>
+<div class="markdown-alert markdown-alert-tip"><p class="markdown-alert-title"><svg class="octicon octicon-light-bulb mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 0 1-1.484.211c-.04-.282-.163-.547-.37-.847a8.456 8.456 0 0 0-.542-.68c-.084-.1-.173-.205-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259-.095.115-.184.22-.268.319-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.751.751 0 0 1-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848.075-.088.147-.173.213-.253.561-.679.985-1.32.985-2.304 0-2.06-1.637-3.75-4-3.75ZM5.75 12h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5ZM6 15.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Z"></path></svg>Tip</p><p><strong>使用说明：</strong><br><br>
+<code class="notranslate">&lt;div align=center&gt;</code>（center=中间、left=左边、right=右边）<br><br>
+<code class="notranslate"> 文本</code>（此处可任意输入）<br><br>
+<code class="notranslate">&lt;/div&gt;</code>（结尾）</p>
+</div>
+<hr>
+<h3 id="user-content-添加哔站视频">添加B站视频</h3>
+<p><strong>代码：</strong></p>
+<p><code class="notranslate">(Gmeek-html&lt;iframe src="//player.bilibili.com/player.html?isOutside=true&amp;aid=替换&amp;bvid=替换&amp;cid=替换&amp;p=1&amp;autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="100%" height="460px"&gt;&lt;/iframe&gt;)</code></p>
+<p><strong>演示：</strong></p>
+<pre class="notranslate"><iframe src="https://player.bilibili.com/player.html?&aid=414125550&bvid=BV1yV411z7Yk&cid=222016010&p=1&autoplay=0&high_quality=1&danmaku=0" width="100%" height="450" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="max-width:100%;" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts"> </iframe>
+</pre>
+<div class="markdown-alert markdown-alert-note"><p class="markdown-alert-title"><svg class="octicon octicon-info mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg>Note</p><p>提示：使用代码时请将开头和结尾的“()”删除，代码可添加至代码块内，详细请参考<a href="#user-content-代码块">代码块</a>，且此代码不会在预览模式启用，上传至博客后即可见到效果。</p>
+</div>
+<div class="markdown-alert markdown-alert-tip"><p class="markdown-alert-title"><svg class="octicon octicon-light-bulb mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 0 1-1.484.211c-.04-.282-.163-.547-.37-.847a8.456 8.456 0 0 0-.542-.68c-.084-.1-.173-.205-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259-.095.115-.184.22-.268.319-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.751.751 0 0 1-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848.075-.088.147-.173.213-.253.561-.679.985-1.32.985-2.304 0-2.06-1.637-3.75-4-3.75ZM5.75 12h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5ZM6 15.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Z"></path></svg>Tip</p><p><strong>使用说明：</strong><br><br>
+复制想要添加到博客的B站视频链接到，如下：<br><br>
+<a href="https://www.bilibili.com/video/BV17w4m1e7Lm/?spm_id_from=333.1007.tianma.1-1-1.click&amp;vd_source=122727f6540d32e232b6b0645b9371cf" rel="nofollow">https://www.bilibili.com/video/BV17w4m1e7Lm/?spm_id_from=333.1007.tianma.1-1-1.click&amp;vd_source=122727f6540d32e232b6b0645b9371cf</a> <br><br>
+然后在此网站解析链接：<br><br>
+<a href="https://www.ibilibili.com/" rel="nofollow">https://www.ibilibili.com/</a> <br><br>
+解析后复制：<br><br>
+AID: <code class="notranslate">1105874011</code>（在解析网站中复制）<br><br>
+CID: <code class="notranslate">1583942197</code> （在解析网站中复制）<br><br>
+Bvid: <code class="notranslate">BV17w4m1e7Lm</code>（在视频链接中复制&lt;video/************/?spm_id_from&gt;）<br><br>
+将这些字符替换到源代码中即可<br><br>
+提示：在Issues的编辑界面中只会显示源代码，将其上传后在博客中才能正常显示。</p>
+</div>
+<hr>
+<h3 id="user-content-强调关键信息">强调关键信息</h3>
+<p><strong>代码：</strong></p>
+<pre class="notranslate"><code class="notranslate">&gt; [!NOTE]
+&gt; #蓝色 注意 用户应该知道的有用信息，即使在浏览内容时也是如此。
+
+&gt; [!TIP]
+&gt; #绿色 提示 有助于将事情做得更好或更轻松的有用建议。
+
+&gt; [!IMPORTANT]
+&gt; #紫色 重要 用户需要了解的关键信息才能实现其目标。
+
+&gt; [!WARNING]
+&gt; #黄色 警告 需要用户立即关注以避免出现问题的紧急信息。
+
+&gt; [!CAUTION]
+&gt; #红色 谨慎 就某些行动的风险或负面结果提供建议。
+</code></pre>
+<p><strong>演示：</strong></p>
+<div class="markdown-alert markdown-alert-note"><p class="markdown-alert-title"><svg class="octicon octicon-info mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg>Note</p><p>#蓝色 注意 用户应该知道的有用信息，即使在浏览内容时也是如此。</p>
+</div>
+<div class="markdown-alert markdown-alert-tip"><p class="markdown-alert-title"><svg class="octicon octicon-light-bulb mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 0 1-1.484.211c-.04-.282-.163-.547-.37-.847a8.456 8.456 0 0 0-.542-.68c-.084-.1-.173-.205-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259-.095.115-.184.22-.268.319-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.751.751 0 0 1-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848.075-.088.147-.173.213-.253.561-.679.985-1.32.985-2.304 0-2.06-1.637-3.75-4-3.75ZM5.75 12h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5ZM6 15.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Z"></path></svg>Tip</p><p>#绿色 提示 有助于将事情做得更好或更轻松的有用建议。</p>
+</div>
+<div class="markdown-alert markdown-alert-important"><p class="markdown-alert-title"><svg class="octicon octicon-report mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M0 1.75C0 .784.784 0 1.75 0h12.5C15.216 0 16 .784 16 1.75v9.5A1.75 1.75 0 0 1 14.25 13H8.06l-2.573 2.573A1.458 1.458 0 0 1 3 14.543V13H1.75A1.75 1.75 0 0 1 0 11.25Zm1.75-.25a.25.25 0 0 0-.25.25v9.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h6.5a.25.25 0 0 0 .25-.25v-9.5a.25.25 0 0 0-.25-.25Zm7 2.25v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 1.5 0ZM9 9a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"></path></svg>Important</p><p>#紫色 重要 用户需要了解的关键信息才能实现其目标。</p>
+</div>
+<div class="markdown-alert markdown-alert-warning"><p class="markdown-alert-title"><svg class="octicon octicon-alert mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M6.457 1.047c.659-1.234 2.427-1.234 3.086 0l6.082 11.378A1.75 1.75 0 0 1 14.082 15H1.918a1.75 1.75 0 0 1-1.543-2.575Zm1.763.707a.25.25 0 0 0-.44 0L1.698 13.132a.25.25 0 0 0 .22.368h12.164a.25.25 0 0 0 .22-.368Zm.53 3.996v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 1.5 0ZM9 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"></path></svg>Warning</p><p>#黄色 警告 需要用户立即关注以避免出现问题的紧急信息。</p>
+</div>
+<div class="markdown-alert markdown-alert-caution"><p class="markdown-alert-title"><svg class="octicon octicon-stop mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M4.47.22A.749.749 0 0 1 5 0h6c.199 0 .389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749 0 0 1-.22.53l-4.25 4.25A.749.749 0 0 1 11 16H5a.749.749 0 0 1-.53-.22L.22 11.53A.749.749 0 0 1 0 11V5c0-.199.079-.389.22-.53Zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5ZM8 4a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg>Caution</p><p>#红色 谨慎 就某些行动的风险或负面结果提供建议。</p>
+</div>
+<div class="markdown-alert markdown-alert-tip"><p class="markdown-alert-title"><svg class="octicon octicon-light-bulb mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 0 1-1.484.211c-.04-.282-.163-.547-.37-.847a8.456 8.456 0 0 0-.542-.68c-.084-.1-.173-.205-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259-.095.115-.184.22-.268.319-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.751.751 0 0 1-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848.075-.088.147-.173.213-.253.561-.679.985-1.32.985-2.304 0-2.06-1.637-3.75-4-3.75ZM5.75 12h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5ZM6 15.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Z"></path></svg>Tip</p><p><strong>使用说明：</strong><br><br>
+五种含义的框，每种框的首行代表的是对应的含义，次行可填写自定义内容。</p>
+</div>
+<hr>
+<h3 id="user-content-自定义链接名称">自定义链接名称</h3>
+<p><strong>代码：</strong></p>
+<pre class="notranslate"><code class="notranslate">[Github](https://github.com/)
+</code></pre>
+<p><strong>演示：</strong></p>
+<p><a href="https://github.com/">Github</a></p>
+<div class="markdown-alert markdown-alert-tip"><p class="markdown-alert-title"><svg class="octicon octicon-light-bulb mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 0 1-1.484.211c-.04-.282-.163-.547-.37-.847a8.456 8.456 0 0 0-.542-.68c-.084-.1-.173-.205-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259-.095.115-.184.22-.268.319-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.751.751 0 0 1-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848.075-.088.147-.173.213-.253.561-.679.985-1.32.985-2.304 0-2.06-1.637-3.75-4-3.75ZM5.75 12h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5ZM6 15.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Z"></path></svg>Tip</p><p><strong>使用说明：</strong><br><br>
+<code class="notranslate">[自定义名称](自定义超链接)</code></p>
+</div>
+<hr>
+<h3 id="user-content-下拉列表">下拉列表</h3>
+<p><strong>代码：</strong></p>
+<pre class="notranslate"><code class="notranslate">&lt;details&gt;
+    &lt;summary&gt;收纳&lt;/summary&gt;
+这是一段被收纳的文字。
+    &lt;/details&gt;
+</code></pre>
+<p><strong>演示：</strong></p>
+<details>
+    <summary>收纳</summary>
+这是一段被收纳的文字。
+    </details>
+<div class="markdown-alert markdown-alert-tip"><p class="markdown-alert-title"><svg class="octicon octicon-light-bulb mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 0 1-1.484.211c-.04-.282-.163-.547-.37-.847a8.456 8.456 0 0 0-.542-.68c-.084-.1-.173-.205-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259-.095.115-.184.22-.268.319-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.751.751 0 0 1-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848.075-.088.147-.173.213-.253.561-.679.985-1.32.985-2.304 0-2.06-1.637-3.75-4-3.75ZM5.75 12h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5ZM6 15.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Z"></path></svg>Tip</p><p><strong>使用说明：</strong><br><br>
+<code class="notranslate">&lt;details&gt;</code><br><br>
+<code class="notranslate">  &lt;summary&gt;自定义名称&lt;/summary&gt;</code><br><br>
+<code class="notranslate">自定义文字</code><br><br>
+<code class="notranslate">  &lt;/details&gt;</code>（收纳结尾）</p>
+</div>
+<hr>
+<h2 id="user-content-config设置">config设置</h2>
+<h3 id="user-content-在主页右上角添加外部链接">在主页右上角添加外部链接</h3>
+<p><strong>代码：</strong></p>
+<pre class="notranslate"><code class="notranslate">"singlePage":["about"],
+"iconList":{"图标文本":"打开图标网站，选择一款16像素的图标复制SVG，然后将复制结果`&lt;path d="代码"&gt;&lt;/path&gt;&lt;/svg&gt;`中间的代码替换到此处即可},
+"exlink":{"图标文本":"替换成自己的外部链接"},`
+</code></pre>
+<div class="markdown-alert markdown-alert-tip"><p class="markdown-alert-title"><svg class="octicon octicon-light-bulb mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 0 1-1.484.211c-.04-.282-.163-.547-.37-.847a8.456 8.456 0 0 0-.542-.68c-.084-.1-.173-.205-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259-.095.115-.184.22-.268.319-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.751.751 0 0 1-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848.075-.088.147-.173.213-.253.561-.679.985-1.32.985-2.304 0-2.06-1.637-3.75-4-3.75ZM5.75 12h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5ZM6 15.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Z"></path></svg>Tip</p><p><strong>使用说明：</strong><br><br>
+打开 <code class="notranslate">Code</code> 中的 <code class="notranslate">config.json</code>，然后将此代码复制到 <code class="notranslate"> "GMEEK_VERSION":"last"</code> 上面另起一行。<br><br>
+"singlePage":["about"],<br></p>
+<p>"iconList":{"图标文本":"打开图标网站，选择一款16像素的图标复制SVG，然后将复制结果<code class="notranslate">&lt;path d="代码"&gt;&lt;/path&gt;&lt;/svg&gt;</code>中间的代码替换到此处即可},<br><br>
+"exlink":{"图标文本":"替换成自己的外部链接"},`<br></p>
+<p>图标网站：<a href="https://primer.style/foundations/icons" rel="nofollow">Octicons | Primer</a><br></p>
+<p><strong>在设置完成后必须手动构件Geek！</strong></p>
+</div>
+</div>
+<div style="font-size:small;margin-top:8px;float:right;">感谢阅览！</div>
+
+<button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
+<div class="comments" id="comments"></div>
+
+</div>
+    <div id="footer"><div id="footer1">Copyright © <span id="copyrightYear"></span> <a href="https://DiYingisaDer.github.io/zang_diying.github.io">Zang.帝缨的博客</a></div>
+<div id="footer2">
+    <span id="runday"></span><span>Powered by <a href="https://meekdai.com/Gmeek.html" target="_blank">Gmeek</a></span>
+</div>
+
+<script>
+var now=new Date();
+document.getElementById("copyrightYear").innerHTML=now.getFullYear();
+
+if("06/26/2024"!=""){
+    var startSite=new Date("06/26/2024");
+    var diff=now.getTime()-startSite.getTime();
+    var diffDay=Math.floor(diff/(1000*60*60*24));
+    document.getElementById("runday").innerHTML="网站运行"+diffDay+"天"+" • ";
+}
+</script></div>
+</body>
+<script>
+var IconList={'sun': 'M8 10.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5zM8 12a4 4 0 100-8 4 4 0 000 8zM8 0a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0V.75A.75.75 0 018 0zm0 13a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0v-1.5A.75.75 0 018 13zM2.343 2.343a.75.75 0 011.061 0l1.06 1.061a.75.75 0 01-1.06 1.06l-1.06-1.06a.75.75 0 010-1.06zm9.193 9.193a.75.75 0 011.06 0l1.061 1.06a.75.75 0 01-1.06 1.061l-1.061-1.06a.75.75 0 010-1.061zM16 8a.75.75 0 01-.75.75h-1.5a.75.75 0 010-1.5h1.5A.75.75 0 0116 8zM3 8a.75.75 0 01-.75.75H.75a.75.75 0 010-1.5h1.5A.75.75 0 013 8zm10.657-5.657a.75.75 0 010 1.061l-1.061 1.06a.75.75 0 11-1.06-1.06l1.06-1.06a.75.75 0 011.06 0zm-9.193 9.193a.75.75 0 010 1.06l-1.06 1.061a.75.75 0 11-1.061-1.06l1.06-1.061a.75.75 0 011.061 0z', 'moon': 'M9.598 1.591a.75.75 0 01.785-.175 7 7 0 11-8.967 8.967.75.75 0 01.961-.96 5.5 5.5 0 007.046-7.046.75.75 0 01.175-.786zm1.616 1.945a7 7 0 01-7.678 7.678 5.5 5.5 0 107.678-7.678z', 'sync': 'M1.705 8.005a.75.75 0 0 1 .834.656 5.5 5.5 0 0 0 9.592 2.97l-1.204-1.204a.25.25 0 0 1 .177-.427h3.646a.25.25 0 0 1 .25.25v3.646a.25.25 0 0 1-.427.177l-1.38-1.38A7.002 7.002 0 0 1 1.05 8.84a.75.75 0 0 1 .656-.834ZM8 2.5a5.487 5.487 0 0 0-4.131 1.869l1.204 1.204A.25.25 0 0 1 4.896 6H1.25A.25.25 0 0 1 1 5.75V2.104a.25.25 0 0 1 .427-.177l1.38 1.38A7.002 7.002 0 0 1 14.95 7.16a.75.75 0 0 1-1.49.178A5.5 5.5 0 0 0 8 2.5Z', 'home': 'M6.906.664a1.749 1.749 0 0 1 2.187 0l5.25 4.2c.415.332.657.835.657 1.367v7.019A1.75 1.75 0 0 1 13.25 15h-3.5a.75.75 0 0 1-.75-.75V9H7v5.25a.75.75 0 0 1-.75.75h-3.5A1.75 1.75 0 0 1 1 13.25V6.23c0-.531.242-1.034.657-1.366l5.25-4.2Zm1.25 1.171a.25.25 0 0 0-.312 0l-5.25 4.2a.25.25 0 0 0-.094.196v7.019c0 .138.112.25.25.25H5.5V8.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v5.25h2.75a.25.25 0 0 0 .25-.25V6.23a.25.25 0 0 0-.094-.195Z', 'github': 'M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z', 'copy': 'M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z', 'check': 'M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z'};
+var utterancesLoad=0;
+
+let themeSettings={
+    "dark": ["dark","moon","#00f0ff","dark-blue"],
+    "light": ["light","sun","#ff5000","github-light"],
+    "auto": ["auto","sync","","preferred-color-scheme"]
+};
+function changeTheme(mode, icon, color, utheme){
+    document.documentElement.setAttribute("data-color-mode",mode);
+    document.getElementById("themeSwitch").setAttribute("d",value=IconList[icon]);
+    document.getElementById("themeSwitch").parentNode.style.color=color;
+    if(utterancesLoad==1){utterancesTheme(utheme);}
+}
+function modeSwitch(){
+    let currentMode=document.documentElement.getAttribute('data-color-mode');
+    let newMode = currentMode === "light" ? "dark" : currentMode === "dark" ? "auto" : "light";
+    localStorage.setItem("meek_theme", newMode);
+    if(themeSettings[newMode]){
+        changeTheme(...themeSettings[newMode]);
+    }
+}
+function utterancesTheme(theme){
+    const message={type:'set-theme',theme: theme};
+    const iframe=document.getElementsByClassName('utterances-frame')[0];
+    iframe.contentWindow.postMessage(message,'https://utteranc.es');
+}
+if(themeSettings[theme]){changeTheme(...themeSettings[theme]);}
+console.log("\n %c Gmeek last https://github.com/Meekdai/Gmeek \n","padding:5px 0;background:#02d81d;color:#fff");
+</script>
+
+<script>
+document.getElementById("pathHome").setAttribute("d",IconList["home"]);
+document.getElementById("pathIssue").setAttribute("d",IconList["github"]);
+
+
+
+function openComments(){
+    cm=document.getElementById("comments");
+    cmButton=document.getElementById("cmButton");
+    cmButton.innerHTML="loading";
+    span=document.createElement("span");
+    span.setAttribute("class","AnimatedEllipsis");
+    cmButton.appendChild(span);
+
+    script=document.createElement("script");
+    script.setAttribute("src","https://utteranc.es/client.js");
+    script.setAttribute("repo","DiYingisaDer/zang_diying.github.io");
+    script.setAttribute("issue-term","title");
+    
+    if(localStorage.getItem("meek_theme")=="dark"){script.setAttribute("theme","dark-blue");}
+    else if(localStorage.getItem("meek_theme")=="light") {script.setAttribute("theme","github-light");}
+    else{script.setAttribute("theme","preferred-color-scheme");}
+    
+    script.setAttribute("crossorigin","anonymous");
+    script.setAttribute("async","");
+    cm.appendChild(script);
+
+    int=self.setInterval("iFrameLoading()",200);
+}
+
+function iFrameLoading(){
+    var utterances=document.getElementsByClassName('utterances');
+    if(utterances.length==1){
+        if(utterances[0].style.height!=""){
+            utterancesLoad=1;
+            int=window.clearInterval(int);
+            document.getElementById("cmButton").style.display="none";
+            console.log("utterances Load OK");
+        }
+    }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const createClipboardHTML = (codeContent, additionalClasses = '') => `
+        <pre class="notranslate"><code class="notranslate">${codeContent}</code></pre>
+        <div class="clipboard-container position-absolute right-0 top-0 ${additionalClasses}">
+            <clipboard-copy class="ClipboardButton btn m-2 p-0" role="button" style="display: inherit;">
+                <svg height="16" width="16" class="octicon octicon-copy m-2"><path d="${IconList["copy"]}"></path></svg>
+                <svg height="16" width="16" class="octicon octicon-check color-fg-success m-2 d-none"><path d="${IconList["check"]}"></path></svg>
+            </clipboard-copy>
+            <div class="copy-feedback">Copied!</div>
+        </div>
+    `;
+
+    const handleCodeElements = (selector = '') => {
+        document.querySelectorAll(selector).forEach(codeElement => {
+            const codeContent = codeElement.innerHTML;
+            const newStructure = document.createElement('div');
+            newStructure.className = 'snippet-clipboard-content position-relative overflow-auto';
+            newStructure.innerHTML = createClipboardHTML(codeContent);
+
+            const parentElement = codeElement.parentElement;
+            if (selector.includes('highlight')) {
+                parentElement.insertBefore(newStructure, codeElement.nextSibling);
+                parentElement.removeChild(codeElement);
+            } else {
+                parentElement.parentElement.replaceChild(newStructure, parentElement);
+            }
+        });
+    };
+
+    handleCodeElements('pre.notranslate > code.notranslate');
+    handleCodeElements('div.highlight > pre.notranslate');
+
+    let currentFeedback = null;
+    document.querySelectorAll('clipboard-copy').forEach(copyButton => {
+        copyButton.addEventListener('click', () => {
+            const codeContent = copyButton.closest('.snippet-clipboard-content').innerText;
+            const tempTextArea = document.createElement('textarea');
+            tempTextArea.value = codeContent;
+            document.body.appendChild(tempTextArea);
+            tempTextArea.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempTextArea);
+
+            const copyIcon = copyButton.querySelector('.octicon-copy');
+            const checkIcon = copyButton.querySelector('.octicon-check');
+            const copyFeedback = copyButton.nextElementSibling;
+
+            if (currentFeedback && currentFeedback !== copyFeedback) {currentFeedback.style.display = 'none';}
+            currentFeedback = copyFeedback;
+
+            copyIcon.classList.add('d-none');
+            checkIcon.classList.remove('d-none');
+            copyFeedback.style.display = 'block';
+            copyButton.style.borderColor = 'var(--color-success-fg)';
+
+            setTimeout(() => {
+                copyIcon.classList.remove('d-none');
+                checkIcon.classList.add('d-none');
+                copyFeedback.style.display = 'none';
+                copyButton.style.borderColor = '';
+            }, 2000);
+        });
+    });
+});
+
+</script>
+<script src='https://blog.meekdai.com/assets/GmeekTOC.js'></script><script>MathJax = {tex: {inlineMath: [["$", "$"]]}};</script><script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</html>
